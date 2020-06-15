@@ -1,12 +1,12 @@
 {
-  "//1": "Bu Altyapı Tamamen Shydra Codeye Aittir.",
+  "//1": "Bu Altyapı Tamamen Devtr'ye Aittir.",
   "//2": "https://discord.gg/xhyQXPN",
   "name": "hello-express",
   "version": "0.0.1",
-  "description": "Bu Altyapı Tamamen Shydra Codeye Aittir.",
-  "main": "shydracode.js",
+  "description": "Bu Altyapı Tamamen Devtr'ye Codeye Aittir.",
+  "main": "devtr.js",
   "scripts": {
-    "start": "node shydracode.js"
+    "start": "node devtr.js"
   },
   "dependencies": {
     "express": "^4.17.1",
