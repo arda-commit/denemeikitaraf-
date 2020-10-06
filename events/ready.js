@@ -1,4 +1,3 @@
-// Bu Altyapı Tamamen Shydra Codeye Aittir.
 const chalk = require("chalk");
 const moment = require("moment");
 const Discord = require("discord.js");
