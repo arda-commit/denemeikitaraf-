@@ -21,7 +21,7 @@ let prefix = await require('quick.db').fetch(`prefix_${message.guild.id}`) || ay
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['botgüvenlik'],
+  aliases: ['botgüvenlik','bg'],
   permLevel: 0
 };
 

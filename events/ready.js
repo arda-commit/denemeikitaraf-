@@ -14,10 +14,12 @@ module.exports = client => {
       client.user.username
     } ismi ile giriş yapıldı!`
   );
-  client.user.setStatus("dnd");
+  client.user.setStatus("idle");
   var oyun = [
     "BLM Code size değer verir :)",
     "BLM Code ❤ Cod{ER}",
+    "BLM CODE ",
+  
 
 //BLM Code ❤ Cod{ER} 
   ];
@@ -30,4 +32,5 @@ module.exports = client => {
 };
 //BLM Code ❤ Cod{ER} 
 // BOTUM STATS KISMI
-// DND RAHATSIZ ETMEYİN İD
+// DND RAHATSIZ ETMEYİN İDLE BOŞTA ONLİNE ONLİNE
+//  NOT : STATS KISMI KÜÇÜK HARFLE !
