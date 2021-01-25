@@ -14,12 +14,12 @@ module.exports = client => {
       client.user.username
     } ismi ile giriş yapıldı!`
   );
-  client.user.setStatus("online");
+  client.user.setStatus("dnd");
   var oyun = [
-    "3",
-    "2",
-    "1"
+    "BLM Code size değer verir :)",
+    "BLM Code ❤ Cod{ER}",
 
+//BLM Code ❤ Cod{ER} 
   ];
 
   setInterval(function() {
@@ -28,3 +28,4 @@ module.exports = client => {
     client.user.setActivity(oyun[random], "");
   }, 2 * 2500);
 };
+//BLM Code ❤ Cod{ER} 

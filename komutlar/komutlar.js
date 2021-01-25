@@ -20,3 +20,4 @@ module.exports.help = {
   description: 'Botta bulunan tüm komutları gösterir',
   usage: 'komutlar'
 };
+//BLM Code ❤ Cod{ER} 

@@ -1,12 +1,12 @@
 {
-  "//1": "Bu Altyapı Tamamen Devtr'ye Aittir.",
-  "//2": "https://discord.gg/xhyQXPN",
+  "//1": "Bu Altyapı Tamamen  BLM CODEnindir.",
+  "//2": "https://discord.gg/Vrq9xN26Ac",
   "name": "hello-express",
   "version": "0.0.1",
-  "description": "Bu Altyapı Tamamen Devtr'ye Codeye Aittir.",
-  "main": "devtr.js",
+  "description": "Bu Altyapı Tamamen BLM Code ye Codeye Aittir.",
+  "main": "blmcode.js",
   "scripts": {
-    "start": "node devtr.js"
+    "start": "node blmcode.js"
   },
   "dependencies": {
     "express": "^4.17.1",
