@@ -29,3 +29,5 @@ module.exports = client => {
   }, 2 * 2500);
 };
 //BLM Code ❤ Cod{ER} 
+// BOTUM STATS KISMI
+// DND RAHATSIZ ETMEYİN İD
