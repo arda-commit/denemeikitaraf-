@@ -4,9 +4,9 @@
   "name": "hello-express",
   "version": "0.0.1",
   "description": "Bu Altyapı Tamamen BLM Code ye Codeye Aittir.",
-  "main": "blmcode.js",
+  "main": "armor-code.js",
   "scripts": {
-    "start": "node blmcode.js"
+    "start": "node armor-code.js"
   },
   "dependencies": {
     "express": "^4.17.1",
