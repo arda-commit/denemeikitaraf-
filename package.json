@@ -1,9 +1,8 @@
 {
-  "//1": "Bu Altyapı Tamamen  BLM CODEnindir.",
-  "//2": "https://discord.gg/Vrq9xN26Ac",
+  "//1": "Çalınması Ve Paylaşılması Yasaktır",
   "name": "hello-express",
   "version": "0.0.1",
-  "description": "Bu Altyapı Tamamen BLM Code ye Codeye Aittir.",
+  "description": "Armor Kod V12 Boş Altyapı",
   "main": "armor-code.js",
   "scripts": {
     "start": "node armor-code.js"

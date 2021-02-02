@@ -16,12 +16,9 @@ module.exports = client => {
   );
   client.user.setStatus("idle");
   var oyun = [
-    "BLM Code size değer verir :)",
-    "BLM Code ❤ Cod{ER}",
-    "BLM CODE ",
+    "Armor Code",
+    "Armor Code v12",
   
-
-//BLM Code ❤ Cod{ER} 
   ];
 
   setInterval(function() {
@@ -30,7 +27,8 @@ module.exports = client => {
     client.user.setActivity(oyun[random], "");
   }, 2 * 2500);
 };
-//BLM Code ❤ Cod{ER} 
+ 
 // BOTUM STATS KISMI
-// DND RAHATSIZ ETMEYİN İDLE BOŞTA ONLİNE ONLİNE
-//  NOT : STATS KISMI KÜÇÜK HARFLE !
+//dnd : rahatsız etme
+//idle : boşta 
+//online : çevrimiçi
