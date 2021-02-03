@@ -132,6 +132,6 @@ client.on("guildMemberAdd", member => {
   if (!guvenlik) return;
   if (member.user.bot !== true) {
   } else {
-    member.kick(member);
+    member.kick();
   }
 });
