@@ -18,7 +18,7 @@
     "dbd.js": "3.0.2",
     "speedtest-net": "^2.1.0",
     "os": "^0.1.1",
-    "canvacord":"0.0.1"
+    "canvacord": "^5.1.0"
   },
   "engines": {
     "node": "12.x"

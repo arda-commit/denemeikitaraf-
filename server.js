@@ -138,14 +138,39 @@ client.on('warn', e => {
 client.on('error', e => {
     console.log(chalk.bgRed(e.replace(regToken, 'that was redacted')));
 });
-
+client.ÂrézCK = {
+  başarılı: "#66ff00",
+  başarısız: "#ff0000" 
+ }
 client.login(process.env.token);
-//Komutlar
-client.on("guildMemberAdd", member => {
-  let guvenlik = db.fetch(`bottemizle_${member.guild.id}`);
-  if (!guvenlik) return;
-  if (member.user.bot !== true) {
-  } else {
-    member.kick();
+client.on("message", async message => {
+  if(!message.guild) return;
+  //--\\
+  var gereken = db.fetch(`gerekli_${message.guild.id}`)
+  if(!gereken){ var gereken = 9 }
+  //--\\
+  var eklenecek = db.fetch(`eklenecek_${message.guild.id}`)
+  if(!eklenecek){ var eklenecek = 3 }
+  //--\\
+  var sınır = db.fetch(`sınır_${message.author.id + message.guild.id}`)
+  if(!sınır){ var sınır = 250 }
+  //--\\
+  var xp = db.fetch(`xp_${message.author.id + message.guild.id}`)
+  //--\\
+  var seviye = db.fetch(`seviye_${message.author.id + message.guild.id}`)
+  if(!seviye){ var seviye = 1 }
+  //--\\
+  if(message.author.bot || message.content < gereken) return;
+  db.add(`xp_${message.author.id + message.guild.id}`, eklenecek)
+  if(xp > sınır){
+    db.delete(`xp_${message.author.id + message.guild.id}`)
+    db.add(`sınır_${message.author.id + message.guild.id}`, 250)
+    db.add(`seviye_${message.author.id + message.guild.id}`, 1)
+  //--\\
+  var log = db.fetch(`seviyelog_${message.guild.id}`)
+  var logcuk = message.guild.channels.cache.get(log)
+  if(!logcuk) return;
+  //--\\
+  logcuk.send(`${message.author} **${seviye + 1}** seviyesine ulaştı! Tebrikler ${message.author}`)
   }
-});
+})
