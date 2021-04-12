@@ -3,11 +3,11 @@ let guildName = args[0];
 if (!guildName) return message.channel.send("Oluşturmamı istediğiniz sunucunun adını girin")
 const Guild = await client.guilds.create(guildName, {
           channels: [
-              {"name": "davet-kanal", "topic": "Burası davet kanalıdır."},
+              {"name": "genel", "topic": "."},
           ]
       });
 
-      const GuildChannel = Guild.channels.cache.find(channel => channel.name == "davet-kanal");
+      const GuildChannel = Guild.channels.cache.find(channel => channel.name == "genel");
       const Invite = await GuildChannel.createInvite({maxAge: 0, unique: true, reason: "Yeni Sunucu."})
 
       message.channel.send(`Sunucu oluşturuldu. Davet Kodu: ${Invite.url}`);
@@ -18,7 +18,7 @@ exports.conf = {
 }
 
 exports.help = {
-    name: "hazır-sunucu",
+    name: "sunucu-oluştur",
     description: "Bota sunucu oluşturtursunuz.",
-    usage: "hazır-sunucu <sunucu-adı>"
+    usage: "sunucu-oluştur <sunucu-adı>"
 }
