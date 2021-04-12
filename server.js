@@ -158,7 +158,7 @@ client.on("message", async message => {
   var xp = db.fetch(`xp_${message.author.id + message.guild.id}`)
   //--\\
   var seviye = db.fetch(`seviye_${message.author.id + message.guild.id}`)
-  if(!seviye){ var seviye = 1 }
+  if(!seviye){ var seviye = 0 }
   //--\\
   if(message.author.bot || message.content < gereken) return;
   db.add(`xp_${message.author.id + message.guild.id}`, eklenecek)
@@ -171,6 +171,6 @@ client.on("message", async message => {
   var logcuk = message.guild.channels.cache.get(log)
   if(!logcuk) return;
   //--\\
-  logcuk.send(`${message.author} **${seviye}** seviyesine ulaştı! Tebrikler ${message.author}`)
+  logcuk.send(`${message.author} **${seviye + 1}** seviyesine ulaştı! Tebrikler ${message.author}`)
   }
 })
