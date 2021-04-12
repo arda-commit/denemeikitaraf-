@@ -16,8 +16,8 @@ module.exports = client => {
   );
   client.user.setStatus("idle");
   var oyun = [
-    "Armor Code",
-    "Armor Code v12",
+    "deneme",
+    " ",
   
   ];
 

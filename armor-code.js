@@ -12,6 +12,20 @@ const express = require('express');
 require('./util/eventLoader.js')(client);
 const path = require('path');
 const snekfetch = require('snekfetch');
+var dbd = require('dbd.js')
+var bot = new dbd.Bot({
+    token:process.env.token,
+    prefix:"!"
+})
+bot.onMessage()
+var reader = fs.readdirSync("./dbdjskomutlar/").filter(file => file.endsWith(".js"))
+for(const file of reader) {    
+    const command = require(`./dbdjskomutlar/${file}`)
+    bot.command({
+        name: command.name,
+        code: command.code
+    })
+}
 
 const app = express();
 app.get("/", (request, response) => {
@@ -125,7 +139,7 @@ client.on('error', e => {
     console.log(chalk.bgRed(e.replace(regToken, 'that was redacted')));
 });
 
-client.login(ayarlar.token);
+client.login(process.env.token);
 //Komutlar
 client.on("guildMemberAdd", member => {
   let guvenlik = db.fetch(`bottemizle_${member.guild.id}`);
