@@ -11,7 +11,7 @@ exports.run = (client, message) => {
   else if (osType === 'Ubuntu') osType = 'Ubuntu'
   else osType = os.type();
     var test = speedTest({maxTime: 5000});
-    client.on('data', data => {
+    test.on('data', data => {
 const plasmic = new Discord.MessageEmbed()
  .setColor("RANDOM")        
 .setTitle('**Speedtest Sonuçlar**')
