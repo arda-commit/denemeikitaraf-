@@ -171,6 +171,6 @@ client.on("message", async message => {
   var logcuk = message.guild.channels.cache.get(log)
   if(!logcuk) return;
   //--\\
-  logcuk.send(`${message.author} **${seviye + 1}** seviyesine ulaştı! Tebrikler ${message.author}`)
+  logcuk.send(`${message.author} **${seviye}** seviyesine ulaştı! Tebrikler ${message.author}`)
   }
 })
