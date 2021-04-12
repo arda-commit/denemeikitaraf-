@@ -15,7 +15,7 @@ const snekfetch = require('snekfetch');
 var dbd = require('dbd.js')
 var bot = new dbd.Bot({
     token:process.env.token,
-    prefix:"!"
+    prefix:"!!"
 })
 bot.onMessage()
 var reader = fs.readdirSync("./dbdjskomutlar/").filter(file => file.endsWith(".js"))
