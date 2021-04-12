@@ -15,7 +15,9 @@
     "jimp": "^0.12.1",
     "quick.db": "^7.1.1",
     "snekfetch": "^4.0.4",
-    "dbd.js":"3.0.2"
+    "dbd.js": "3.0.2",
+    "speedtest-net": "^2.1.0",
+    "os": "^0.1.1"
   },
   "engines": {
     "node": "12.x"
