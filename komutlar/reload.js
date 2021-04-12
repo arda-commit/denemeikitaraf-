@@ -4,7 +4,7 @@ let komutlar;
 
 exports.run = async (client, message, args) => {
 
-if(message.author.id !== "ayarlar.sahip") return;
+if(message.author.id !== ayarlar.sahip) return;
 
 if (!args[0]) return message.channel.send('komut ismi gir');
 
