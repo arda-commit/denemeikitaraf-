@@ -54,7 +54,7 @@ exports.run = async (client, message, args) => {
 						time: 30000
 					});
 					if (!turn.size) {
-						await message.reply(`Üzgünüm ama, süre doldu!`);
+						await message.reply(`karşındaki kişi uzun süre cevap vermediğinden sıra  sana geçti`);
 						reset();
 						continue;
 					}
@@ -105,7 +105,7 @@ exports.conf = {
   permLevel: `Yetki gerekmiyor.`
 };
 exports.help = {
-  name: 'düello',
+  name: 'duello',
   category: "eğlence",
   description: 'İstediğiniz bir kişi ile düello atarsınız!',
   usage: 'duello <@kullanıcı>'
