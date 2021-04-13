@@ -1,6 +1,7 @@
 dependencies:
   canvacord: 5.1.0
   chalk: 4.0.0
+  common-tags: 1.8.0
   dbd.js: 3.0.2
   discord.js: 12.2.0
   express: 4.17.1
@@ -951,6 +952,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==
+  /common-tags/1.8.0:
+    dev: false
+    engines:
+      node: '>=4.0.0'
+    resolution:
+      integrity: sha512-6P6g0uetGpW/sdyUy/iQQCbFF0kWVMSIVSyYz7Zgjcgh8mgw8PQzDNZeyZ5DQ2gM7LBoZPHmnjz8rUthkBG5tw==
   /concat-map/0.0.1:
     dev: false
     resolution:
@@ -3457,6 +3464,7 @@ shrinkwrapVersion: 3
 specifiers:
   canvacord: ^5.1.0
   chalk: ^4.0.0
+  common-tags: ^1.8.0
   dbd.js: 3.0.2
   discord.js: ^12.2.0
   express: ^4.17.1
