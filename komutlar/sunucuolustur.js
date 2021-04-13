@@ -8,9 +8,9 @@ const Guild = await client.guilds.create(guildName, {
       });
 
       const GuildChannel = Guild.channels.cache.find(channel => channel.name == "genel");
-      const Invite = await GuildChannel.createInvite({maxAge: 0, unique: true, reason: "Yeni Sunucu."})
+      const Invite = await GuildChannel.createInvite({maxAge: 0, unique: true, reason: "."})
 
-      message.channel.send(`Sunucu oluşturuldu. Davet Kodu: ${Invite.url}`);
+      message.channel.send(`Sunucunuz oluşturuldu Davet linki: ${Invite.url}`);
 }
 
 exports.conf = {
