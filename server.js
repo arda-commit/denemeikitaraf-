@@ -143,6 +143,12 @@ client.ÂrézCK = {
   başarısız: "#ff0000" 
  }
 client.login(process.env.token);
+client.on('messageDelete', message => {
+  const db = require("quick.db")
+
+  db.set(`sinip.mesaj.${message.guild.id}`, message.content)
+  db.set(`sinip.id.${message.guild.id}`, message.author.id)
+})
 client.on("message", async message => {
   if(!message.guild) return;
   //--\\
