@@ -170,7 +170,7 @@ client.on("message", async message => {
   db.add(`xp_${message.author.id + message.guild.id}`, eklenecek)
   if(xp > sınır){
     db.delete(`xp_${message.author.id + message.guild.id}`)
-    db.add(`sınır_${message.author.id + message.guild.id}`, 100)
+    db.add(`sınır_${message.author.id + message.guild.id}`, 10)
     db.add(`seviye_${message.author.id + message.guild.id}`, 1)
   //--\\
   var log = db.fetch(`seviyelog_${message.guild.id}`)
