@@ -3,7 +3,7 @@ dependencies:
   chalk: 4.0.0
   common-tags: 1.8.0
   dbd.js: 3.0.2
-  discord.js: 12.2.0
+  discord.js: 12.5.3
   express: 4.17.1
   generate-password: 1.6.0
   hastebin-gen: 2.0.5
@@ -49,10 +49,6 @@ packages:
       node: '>=6.0.0'
     resolution:
       integrity: sha512-Rmn7qQQulw2sxJ8qGfZ7OuqMWuhz8V+L5xnYKMF5cXVcYqmgWqlVEAme90pF7Ya8OVhxVxLmhh0rI2k6t7ITWw==
-  /@discordjs/collection/0.1.5:
-    dev: false
-    resolution:
-      integrity: sha512-CU1q0UXQUpFNzNB7gufgoisDHP7n+T3tkqTsp3MNUkVJ5+hS3BCvME8uCXAUFlz+6T2FbTCu75A+yQ7HMKqRKw==
   /@discordjs/collection/0.1.6:
     dev: false
     resolution:
@@ -61,7 +57,7 @@ packages:
     dependencies:
       asynckit: 0.4.0
       combined-stream: 1.0.8
-      mime-types: 2.1.27
+      mime-types: 2.1.30
     dev: false
     engines:
       node: '>= 6'
@@ -1063,7 +1059,7 @@ packages:
       '@discordjs/opus': 0.5.0
       danbot-hosting: 0.1.6
       dbdjs.db: 1.0.1
-      discord.js: /discord.js/12.5.3/fa9d06f65e25a793dd8c10592808a847
+      discord.js: 12.5.3
       ffmpeg-static: 4.3.0
       moment: 2.29.1
       ms-parser: 1.0.5
@@ -1229,42 +1225,19 @@ packages:
     hasBin: true
     resolution:
       integrity: sha1-+hN8S9aY7fVc1c0CrFWfkaTEups=
-  /discord.js/12.2.0:
-    dependencies:
-      '@discordjs/collection': 0.1.5
-      '@discordjs/form-data': 3.0.1
-      abort-controller: 3.0.0
-      node-fetch: 2.6.0
-      prism-media: 1.2.2
-      setimmediate: 1.0.5
-      tweetnacl: 1.0.3
-      ws: 7.3.0
-    dev: false
-    engines:
-      node: '>=12.0.0'
-    peerDependencies:
-      bufferutil: ^4.0.1
-      erlpack: discordapp/erlpack
-      libsodium-wrappers: ^0.7.6
-      sodium: ^3.0.2
-      utf-8-validate: ^5.0.2
-      zlib-sync: ^0.1.6
-    resolution:
-      integrity: sha512-Ueb/0SOsxXyqwvwFYFe0msMrGqH1OMqpp2Dpbplnlr4MzcRrFWwsBM9gKNZXPVBHWUKiQkwU8AihXBXIvTTSvg==
-  /discord.js/12.5.3/fa9d06f65e25a793dd8c10592808a847:
+  /discord.js/12.5.3:
     dependencies:
       '@discordjs/collection': 0.1.6
       '@discordjs/form-data': 3.0.1
       abort-controller: 3.0.0
       node-fetch: 2.6.1
-      prism-media: /prism-media/1.2.9/fa9d06f65e25a793dd8c10592808a847
+      prism-media: 1.2.9
       setimmediate: 1.0.5
       tweetnacl: 1.0.3
       ws: 7.4.4
     dev: false
     engines:
       node: '>=12.0.0'
-    id: registry.npmjs.org/discord.js/12.5.3
     resolution:
       integrity: sha512-D3nkOa/pCkNyn6jLZnAiJApw2N9XrIsXUAdThf01i7yrEuqUmDGc7/CexVWwEcgbQR97XQ+mcnqJpmJ/92B4Aw==
   /dom-serializer/0.1.1:
@@ -2214,12 +2187,6 @@ packages:
       node: '>= 0.6'
     resolution:
       integrity: sha512-UbfJCR4UAVRNgMpfImz05smAXK7+c+ZntjaA26ANtkXLlOe947Aag5zdIcKQULAiF9Cq4WxBi9jUs5zkA84bYQ==
-  /mime-db/1.44.0:
-    dev: false
-    engines:
-      node: '>= 0.6'
-    resolution:
-      integrity: sha512-/NOTfLrsPBVeH7YtFPgsVWveuL+4SjjYxaQ1xtM1KMFj7HdxlBlxeyNLzhyJVx7r4rZGJAZ/6lkKCitSc/Nmpg==
   /mime-db/1.47.0:
     dev: false
     engines:
@@ -2234,14 +2201,6 @@ packages:
       node: '>= 0.6'
     resolution:
       integrity: sha512-5KhStqB5xpTAeGqKBAMgwaYMnQik7teQN4IAzC7npDv6kzeU6prfkR67bc87J1kWMPGkoaZSq1npmexMgkmEVg==
-  /mime-types/2.1.27:
-    dependencies:
-      mime-db: 1.44.0
-    dev: false
-    engines:
-      node: '>= 0.6'
-    resolution:
-      integrity: sha512-JIhqnCasI9yD+SsmkquHBxTSEuZdQX5BuQnS2Vc7puQQQ+8yiP5AY5uWhpdv4YL4VM5c6iliiYWPgJ/nJQLp7w==
   /mime-types/2.1.30:
     dependencies:
       mime-db: 1.47.0
@@ -2414,12 +2373,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-flmrDNB06LIl5lywUz7YlNGZH/5p0M7W28k8hzd9Lshtdh1wshD2Y+U4h9LD6KObOy1f+fEVdgprPrEymjM5uw==
-  /node-fetch/2.6.0:
-    dev: false
-    engines:
-      node: 4.x || >=6.0.0
-    resolution:
-      integrity: sha512-8dG4H5ujfvFiqDmVu9fQ5bOHUC15JMjMY/Zumv26oOvvVJjM67KF8koCWIabKQ1GJIa9r2mMZscBq/TbdOcmNA==
   /node-fetch/2.6.1:
     dev: false
     engines:
@@ -2773,21 +2726,8 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha1-6SQ0v6XqjBn0HN/UAddBo8gZ2Jc=
-  /prism-media/1.2.2:
+  /prism-media/1.2.9:
     dev: false
-    peerDependencies:
-      '@discordjs/opus': ^0.1.0
-      ffmpeg-static: ^2.4.0 || ^3.0.0
-      node-opus: ^0.3.1
-      opusscript: ^0.0.6
-    resolution:
-      integrity: sha512-I+nkWY212lJ500jLe4tN9tWO7nRiBAVdMv76P9kffZjYhw20raMlW1HSSvS+MLXC9MmbNZCazMrAr+5jEEgTuw==
-  /prism-media/1.2.9/fa9d06f65e25a793dd8c10592808a847:
-    dependencies:
-      '@discordjs/opus': 0.5.0
-      ffmpeg-static: 4.3.0
-    dev: false
-    id: registry.npmjs.org/prism-media/1.2.9
     peerDependencies:
       '@discordjs/opus': ^0.5.0
       ffmpeg-static: ^4.2.7 || ^3.0.0 || ^2.4.0
@@ -3446,15 +3386,6 @@ packages:
     dev: false
     resolution:
       integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
-  /ws/7.3.0:
-    dev: false
-    engines:
-      node: '>=8.3.0'
-    peerDependencies:
-      bufferutil: ^4.0.1
-      utf-8-validate: ^5.0.2
-    resolution:
-      integrity: sha512-iFtXzngZVXPGgpTlP1rBqsUK82p9tKqsWRPg5L56egiljujJT3vGAYnHANvFxBieXrTFavhzhxW52jnaWV+w2w==
   /ws/7.4.4:
     dev: false
     engines:
@@ -3545,7 +3476,7 @@ specifiers:
   chalk: ^4.0.0
   common-tags: ^1.8.0
   dbd.js: 3.0.2
-  discord.js: ^12.2.0
+  discord.js: ^12.5.2
   express: ^4.17.1
   generate-password: ^1.6.0
   hastebin-gen: ^2.0.5
