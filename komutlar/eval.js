@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 
-exports.run = async (client, message, args, color, prefix) => {
+exports.run = async (client, message, args, color, prefix, data) => {
     if(message.author.id !== "714756114520211486") return message.reply(`bu komutu sadece Bot Sahibi kullanabilir!`);
     try {
         let codein = args.join(" ");
@@ -16,7 +16,7 @@ exports.run = async (client, message, args, color, prefix) => {
         .addField('» Sonuç', `\`\`\`js\n${code}\n\`\`\``)
         message.channel.send(embed)
     } catch(e) {
-      let embed2 = new Discord.RichEmbed()
+      let embed2 = new Discord.MessageEmbed()
       .setColor('RANDOM')
       .addField('» Hata', "\`\`\`js\n"+e+"\n\`\`\`")
         message.channel.send(embed2);
