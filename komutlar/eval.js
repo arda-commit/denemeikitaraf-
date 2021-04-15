@@ -10,7 +10,8 @@ exports.run = async (client, message, args, color, prefix, data) => {
       
         if (typeof code !== 'string')
             code = require('util').inspect(code, { depth: 0 });
-        let embed = new Discord.RichEmbed()
+        let embed = new Discord.MessageEmbed
+        ()
         .setColor('RANDOM')
         .addField('» Kod', `\`\`\`js\n${codein}\`\`\``)
         .addField('» Sonuç', `\`\`\`js\n${code}\n\`\`\``)
