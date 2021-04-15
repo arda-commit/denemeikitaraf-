@@ -182,35 +182,3 @@ client.on("message", async message => {
   logcuk.send(`${message.author} **${seviye + 1}** seviyesine ulaştı! Tebrikler ${message.author}`)
   }
 })
-
-dTest = require('speedtest-net');
-
-  var osType = os.type();
-
-  if (osType === 'Darwin') osType = 'macOS'
-  else if (osType === 'Windows') osType = 'Windows'
-  else if (osType === 'Linux') osType = 'Linux'
-  else if (osType === 'Ubuntu') osType = 'Ubuntu'
-  else osType = os.type();
-    var test = speedTest({maxTime: 5000});
-    test.on('data', data => {
-              
-const embed = new Discoeedtest Sonuçlar**')
-.addField('**Anlık İstatistikler**', `İndirme: **${data.speeds.download}**
-Yükleme: **${data.speeds.upload}**`)
-.addField('**Nolmal Olarak Ölçülen İstatistikler**', `İndirme: **${data.speeds.originalDownload}**
-Yükleme: **${data.speeds.originalUpload}**`)
-.addField('**Pingler**', `Discord API Pingi: **${client.ping}**
-Speedtestde Ölçülen Ping: **${data.server.ping}**`)
-.addField(ient.ip}**
-İşletim Sistemi: **${osType}**
-İnternet Sağlayıcısı: **${data.client.isp}**
-Host: **${data.server.host}**
-Lokasyon: **${data.server.country}**,**${data.client.country}**
-
-Sağlayıcı Sponsoru: **${data.server.sponsor}**`)
-m.edit(embed), err => {
-  console.log(err);
-});
-}
-});
