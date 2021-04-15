@@ -92,22 +92,19 @@ module.exports.run = async (client, message, args) => {
     .join("client.ws.ping")
 
   if (v11Kod == v12kod) {
-    return message.channel.send("Bu Kod V12 İle Uyumlu Kankam");
+    return message.channel.send("Bu Kod Zaten V12 ile uyumlu!");
   }
 
     
     const embed = new Discord.MessageEmbed()
     .addField(
-      `:outbox_tray: V12 Kod:`,
+      `V11'den V12'ye çevirilmiş Kod:`,
       `   \`\`\`
 ${v12kod}\`\`\` `
     )
 
 
   message.channel.send(embed);
-  message.author.send(   `:outbox_tray: V12 Kod:`,
-      `   \`\`\`
-${v12kod}\`\`\` `)
   db.add(`çevrilenkod`, 1);
   
 };
