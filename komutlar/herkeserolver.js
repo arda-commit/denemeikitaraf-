@@ -5,5 +5,5 @@ exports.run = async(client, message, args) => {
   message.guild.members.cache.forEach(arez => arez.roles.add(rol.id))
   return message.channel.send(`Herkese \`${rol.id}\` rolü veriliyor. Bu işlem sunucudaki üye sayısı fazlaysa uzun sürebilir`)
 }
-exports.conf = {aliases: [], permlvl: 0}
+exports.conf = {aliases: [], permlvl: 4}
 exports.help = {name: `herkeserolver`}
