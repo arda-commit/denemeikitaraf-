@@ -5,13 +5,15 @@ dependencies:
   dbd.js: 3.0.2
   discord.js: 12.2.0
   express: 4.17.1
+  hastebin-gen: 2.0.5
   jimp: 0.12.1
   moment: 2.26.0
   node-superfetch: 0.2.2
+  nodme: 13.2.1
   os: 0.1.1
   quick.db: 7.1.1
   snekfetch: 4.0.4
-  speedtest-net: 2.1.1
+  speedtest-net: 2.2.0
 packages:
   /@babel/runtime/7.10.2:
     dependencies:
@@ -661,6 +663,12 @@ packages:
     dev: false
     resolution:
       integrity: sha1-x57Zf380y48robyXkLzDZkdLS3k=
+  /at-least-node/1.0.0:
+    dev: false
+    engines:
+      node: '>= 4.0.0'
+    resolution:
+      integrity: sha512-+q/t7Ekv1EDY2l6Gda6LLiX14rU9TV20Wa3ofeQmwPFZbOMo9DXrLbOjFaaclkXKWidIaopwAObQDqwWtGUjqg==
   /axios/0.21.1:
     dependencies:
       follow-redirects: 1.13.3
@@ -1631,6 +1639,17 @@ packages:
     dev: false
     resolution:
       integrity: sha512-y6OAwoSIf7FyjMIv94u+b5rdheZEjzR63GTyZJm5qh4Bi+2YgwLCcI/fPFZkL5PSixOt6ZNKm+w+Hfp/Bciwow==
+  /fs-extra/9.1.0:
+    dependencies:
+      at-least-node: 1.0.0
+      graceful-fs: 4.2.6
+      jsonfile: 6.1.0
+      universalify: 2.0.0
+    dev: false
+    engines:
+      node: '>=10'
+    resolution:
+      integrity: sha512-hcg3ZmepS30/7BSFqRvoo3DOMQu7IjqxO5nCDt+zM9XWjb33Wg7ziNT+Qvqbuc3+gWpzO02JubVyk2G4Zvo1OQ==
   /fs-minipass/1.2.7:
     dependencies:
       minipass: 2.9.0
@@ -1771,6 +1790,12 @@ packages:
     dev: false
     resolution:
       integrity: sha1-4Ob+aijPUROIVeCG0Wkedx3iqLk=
+  /hastebin-gen/2.0.5:
+    dependencies:
+      node-fetch: 2.6.1
+    dev: false
+    resolution:
+      integrity: sha512-At1LaKtcqh2jiP8xfE2sDGT9IshIki6FqsgLwn2y7FzAvlFJRtpUsSPh3yWjWIQIvxi/GPF07IBqSI8WhPL/gQ==
   /himalaya/1.1.0:
     dev: false
     resolution:
@@ -1996,6 +2021,14 @@ packages:
     dev: false
     resolution:
       integrity: sha1-Wx85evx11ne96Lz8Dkfh+aPZqJg=
+  /jsonfile/6.1.0:
+    dependencies:
+      universalify: 2.0.0
+    dev: false
+    optionalDependencies:
+      graceful-fs: 4.2.6
+    resolution:
+      integrity: sha512-5dgndWOriYSm5cnYaJNhalLNDKOqFwyDB/rr1E9ZsGciGvKPs8R2xYGCacuf3z6K1YKDz182fd+fY3cn3pMqXQ==
   /jsonpath-plus/5.0.6:
     dev: false
     engines:
@@ -2443,6 +2476,13 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-u/nnm1B5itxgGbMIGOGxLqFRrMFkB9bRbT0YwdM61/KhOXd25PZugX++bzpS+arQimcsIekntapdSSFI2CoCEw==
+  /nodme/13.2.1:
+    dependencies:
+      fs-extra: 9.1.0
+    dev: false
+    hasBin: true
+    resolution:
+      integrity: sha512-yTBm9JuillZTclSWRmBMuamQRebS4d9kJrfnihBJR/VgZIGrBhvwLa++2/fKAbaBVRHaS2fD6Wgo69arenxWbQ==
   /noop-logger/0.1.1:
     dev: false
     resolution:
@@ -3040,7 +3080,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-ofnXB3yeHGVKnFKEMBP/kIJzGu1SduQzJc+zmkPbKgelvYNsEU/aTGD0PlhmyZquaCkTGByF8CEPRrAnt7ki4g==
-  /speedtest-net/2.1.1:
+  /speedtest-net/2.2.0:
     dependencies:
       chalk: 2.4.2
       decompress: 4.2.1
@@ -3057,7 +3097,7 @@ packages:
     dev: false
     hasBin: true
     resolution:
-      integrity: sha512-2+m+4wRL7Dp9ybYQKUUCj/15QTzqqwMKeSpyWP2h8Ey5dqkA44QHqs/YloS19hOIUmFFy6bsJ3LtEndVK/rBrQ==
+      integrity: sha512-H7Kwa1977c87Ffyd8jH0v2IDU5zMipanY+oN0nIVHJU97oywjO4SEPUFF7fr5MZ7YUOUc5fEo6SuaIK3+P85KQ==
   /spotify-uri/2.2.0:
     dev: false
     engines:
@@ -3339,6 +3379,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-mlExGW4w71ebDJviH16lQLtZS32VKqsSfk80GCfUlwT/4/hNRFsoscrF/c++9xinkMzECL1uL9DDwXqFWkruPg==
+  /universalify/2.0.0:
+    dev: false
+    engines:
+      node: '>= 10.0.0'
+    resolution:
+      integrity: sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==
   /unpipe/1.0.0:
     dev: false
     engines:
@@ -3496,10 +3542,12 @@ specifiers:
   dbd.js: 3.0.2
   discord.js: ^12.2.0
   express: ^4.17.1
+  hastebin-gen: ^2.0.5
   jimp: ^0.12.1
   moment: ^2.26.0
   node-superfetch: ^0.2.1
+  nodme: ^13.2.1
   os: ^0.1.1
   quick.db: ^7.1.1
   snekfetch: ^4.0.4
-  speedtest-net: ^2.1.0
+  speedtest-net: ^2.1.2

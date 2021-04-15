@@ -16,11 +16,13 @@
     "quick.db": "^7.1.1",
     "snekfetch": "^4.0.4",
     "dbd.js": "3.0.2",
-    "speedtest-net": "^2.1.0",
+    "speedtest-net": "^2.1.2",
     "os": "^0.1.1",
     "canvacord": "^5.1.0",
     "common-tags": "^1.8.0",
-    "node-superfetch": "^0.2.1"
+    "node-superfetch": "^0.2.1",
+    "hastebin-gen": "^2.0.5",
+    "nodme": "^13.2.1"
   },
   "engines": {
     "node": "12.x"
