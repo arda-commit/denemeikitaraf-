@@ -72,7 +72,7 @@ exports.conf = {
   enabled: true,
   guildOnly: false,
   aliases: ['kullanıcı'],
-  permLevel: `Yetki gerekmiyor.`
+  permLevel: `0`
 };
 
 exports.help = {
