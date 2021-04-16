@@ -17,6 +17,7 @@ const os = require('os');
 const speedtest = require('speedtest-net');
 const queue = new Map();
 const { GiveawaysManager } = require("discord-giveaways");
+const ms = require("parse-ms");
 var bot = new dbd.Bot({
     token:process.env.token,
     prefix:"!!"
@@ -184,3 +185,43 @@ client.on("message", async message => {
   logcuk.send(`${message.author} **${seviye + 1}** seviyesine ulaştı! Tebrikler ${message.author}`)
   }
 })
+
+
+const GiveawayManagerWithOwnDatabase = class extends GiveawaysManager {
+  async getAllGiveaways() {
+    return db.get("giveaways");
+  }
+
+  async saveGiveaway(messageID, giveawayData) {
+    db.push("giveaways", giveawayData);
+    return true;
+  }
+
+  async editGiveaway(messageID, giveawayData) {
+    const giveaways = db.get("giveaways");
+    const newGiveawaysArray = giveaways.filter(
+      giveaway => giveaway.messageID !== messageID
+    );
+    newGiveawaysArray.push(giveawayData);
+    db.set("giveaways", newGiveawaysArray);
+    return true;
+  }
+
+  async deleteGiveaway(messageID) {
+    const newGiveawaysArray = db
+      .get("giveaways")
+      .filter(giveaway => giveaway.messageID !== messageID);
+    db.set("giveaways", newGiveawaysArray);
+    return true;
+  }
+};
+const manager = new GiveawayManagerWithOwnDatabase(client, {
+  storage: false,
+  updateCountdownEvery: 5000,
+  default: {
+    botsCanWin: false,
+    embedColor: "#0a99ff",
+    reaction: "🎉"
+  }
+});
+client.giveawaysManager = manager;

@@ -13,7 +13,7 @@ dependencies:
   node-superfetch: 0.2.2
   nodme: 13.2.1
   os: 0.1.1
-  parse-ms: 3.0.0
+  parse-ms: 2.1.0
   quick.db: 7.1.1
   snekfetch: 4.0.4
   speedtest-net: 2.2.0
@@ -2648,12 +2648,6 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-kHt7kzLoS9VBZfUsiKjv43mr91ea+U05EyKkEtqp7vNbHxmaVuEqN7XxeEVnGrMtYOAxGrDElSi96K7EgO1zCA==
-  /parse-ms/3.0.0:
-    dev: false
-    engines:
-      node: '>=12'
-    resolution:
-      integrity: sha512-Tpb8Z7r7XbbtBTrM9UhpkzzaMrqA2VXMT3YChzYltwV3P3pM6t8wl7TvpMnSTosz1aQAdVib7kdoys7vYOPerw==
   /parseurl/1.3.3:
     dev: false
     engines:
@@ -3496,7 +3490,7 @@ specifiers:
   chalk: ^4.0.0
   common-tags: ^1.8.0
   dbd.js: 3.0.2
-  discord-giveaways: ^4.4.3
+  discord-giveaways: ^4.2.1
   discord.js: ^12.5.2
   express: ^4.17.1
   generate-password: ^1.6.0
@@ -3506,7 +3500,7 @@ specifiers:
   node-superfetch: ^0.2.1
   nodme: ^13.2.1
   os: ^0.1.1
-  parse-ms: ^3.0.0
+  parse-ms: ^2.0.0
   quick.db: ^7.1.1
   snekfetch: ^4.0.4
   speedtest-net: ^2.1.2
