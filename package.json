@@ -23,7 +23,9 @@
     "node-superfetch": "^0.2.1",
     "hastebin-gen": "^2.0.5",
     "nodme": "^13.2.1",
-    "generate-password": "^1.6.0"
+    "generate-password": "^1.6.0",
+    "discord-giveaways": "^4.4.3",
+    "parse-ms": "^3.0.0"
   },
   "engines": {
     "node": "12.x"

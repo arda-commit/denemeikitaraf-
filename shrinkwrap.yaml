@@ -3,6 +3,7 @@ dependencies:
   chalk: 4.0.0
   common-tags: 1.8.0
   dbd.js: 3.0.2
+  discord-giveaways: 4.4.3
   discord.js: 12.5.3
   express: 4.17.1
   generate-password: 1.6.0
@@ -12,6 +13,7 @@ dependencies:
   node-superfetch: 0.2.2
   nodme: 13.2.1
   os: 0.1.1
+  parse-ms: 3.0.0
   quick.db: 7.1.1
   snekfetch: 4.0.4
   speedtest-net: 2.2.0
@@ -1198,6 +1200,12 @@ packages:
       node: '>=4.0.0'
     resolution:
       integrity: sha512-LOHxIOaPYdHlJRtCQfDIVZtfw/ufM8+rVj649RIHzcm/vGwQRXFt6OPqIFWsm2XEMrNIEtWR64sY1LEKD2vAOA==
+  /deepmerge/4.2.2:
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha512-FJ3UgI4gIl+PHZm53knsuSFpE+nESMr7M4v9QcgB7S63Kj/6WqMiFQJpBBYz1Pt+66bZpP3Q7Lye0Oo9MPKEdg==
   /delayed-stream/1.0.0:
     dev: false
     engines:
@@ -1225,6 +1233,12 @@ packages:
     hasBin: true
     resolution:
       integrity: sha1-+hN8S9aY7fVc1c0CrFWfkaTEups=
+  /discord-giveaways/4.4.3:
+    dependencies:
+      deepmerge: 4.2.2
+    dev: false
+    resolution:
+      integrity: sha512-/IgXWLA6p0bk348/xIrXsHeNQGZW5688fC6DTz5whC5hEAebjoY0usOSq/74iCQ99oQfIHsl6gx4j06UZcIc1w==
   /discord.js/12.5.3:
     dependencies:
       '@discordjs/collection': 0.1.6
@@ -2634,6 +2648,12 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-kHt7kzLoS9VBZfUsiKjv43mr91ea+U05EyKkEtqp7vNbHxmaVuEqN7XxeEVnGrMtYOAxGrDElSi96K7EgO1zCA==
+  /parse-ms/3.0.0:
+    dev: false
+    engines:
+      node: '>=12'
+    resolution:
+      integrity: sha512-Tpb8Z7r7XbbtBTrM9UhpkzzaMrqA2VXMT3YChzYltwV3P3pM6t8wl7TvpMnSTosz1aQAdVib7kdoys7vYOPerw==
   /parseurl/1.3.3:
     dev: false
     engines:
@@ -3476,6 +3496,7 @@ specifiers:
   chalk: ^4.0.0
   common-tags: ^1.8.0
   dbd.js: 3.0.2
+  discord-giveaways: ^4.4.3
   discord.js: ^12.5.2
   express: ^4.17.1
   generate-password: ^1.6.0
@@ -3485,6 +3506,7 @@ specifiers:
   node-superfetch: ^0.2.1
   nodme: ^13.2.1
   os: ^0.1.1
+  parse-ms: ^3.0.0
   quick.db: ^7.1.1
   snekfetch: ^4.0.4
   speedtest-net: ^2.1.2

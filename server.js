@@ -15,6 +15,8 @@ const snekfetch = require('snekfetch');
 var dbd = require('dbd.js')
 const os = require('os');
 const speedtest = require('speedtest-net');
+const queue = new Map();
+const { GiveawaysManager } = require("discord-giveaways");
 var bot = new dbd.Bot({
     token:process.env.token,
     prefix:"!!"
