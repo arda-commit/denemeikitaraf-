@@ -8,24 +8,24 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "express": "^4.17.1",
-    "discord.js": "^12.5.2",
+    "canvacord": "^5.1.0",
     "chalk": "^4.0.0",
-    "moment": "^2.26.0",
+    "common-tags": "^1.8.0",
+    "dbd.js": "3.0.5",
+    "discord-giveaways": "^4.2.1",
+    "discord.js": "^12.5.3",
+    "express": "^4.17.1",
+    "generate-password": "^1.6.0",
+    "hastebin-gen": "^2.0.5",
     "jimp": "^0.12.1",
+    "moment": "^2.26.0",
+    "node-superfetch": "^0.2.1",
+    "nodme": "^13.2.1",
+    "os": "^0.1.1",
+    "parse-ms": "^2.0.0",
     "quick.db": "^7.1.1",
     "snekfetch": "^4.0.4",
-    "dbd.js": "3.0.5",
-    "speedtest-net": "^2.1.2",
-    "os": "^0.1.1",
-    "canvacord": "^5.1.0",
-    "common-tags": "^1.8.0",
-    "node-superfetch": "^0.2.1",
-    "hastebin-gen": "^2.0.5",
-    "nodme": "^13.2.1",
-    "generate-password": "^1.6.0",
-    "discord-giveaways": "^4.2.1",
-    "parse-ms": "^2.0.0"
+    "speedtest-net": "^2.1.2"
   },
   "engines": {
     "node": "12.x"
