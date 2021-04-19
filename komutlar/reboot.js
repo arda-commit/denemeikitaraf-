@@ -1,6 +1,6 @@
 const {RichEmbed} = require("discord.js"); // [package required: discord.js]
 exports.run = async (client, message, args, level) => {
-  if(message.author.id !== "") return message.reply(`bu komutu sadece Bot Sahibi kullanabilir!`);
+  if(message.author.id !== "714756114520211486") return message.reply(`bu komutu sadece Bot Sahibi kullanabilir!`);
   // EMBED
   let embed = new RichEmbed()
   .setColor("RANDOM")
