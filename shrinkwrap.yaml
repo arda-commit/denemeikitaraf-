@@ -6,6 +6,7 @@ dependencies:
   discord-giveaways: 4.4.3
   discord.js: 12.5.3
   express: 4.17.1
+  film-apisi: 1.0.0
   generate-password: 1.6.0
   hastebin-gen: 2.0.5
   jimp: 0.12.1
@@ -1537,6 +1538,12 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-ICw7NTT6RsDp2rnYKVd8Fu4cr6ITzGy3+u4vUujPkabyaz+03F24NWEX7fs5fp+kBonlaqPH8fAO2NM+SXt/JA==
+  /film-apisi/1.0.0:
+    dependencies:
+      node-fetch: 2.6.1
+    dev: false
+    resolution:
+      integrity: sha512-ZpNvuu6cIkdHI8E5TGP+c1phUNELMiSTGWyDa65l2My2s/VA6z5aCP29Rv1lN5aPeqE9pGhmRHQK9e5MINv1jA==
   /finalhandler/1.1.2:
     dependencies:
       debug: 2.6.9
@@ -3439,6 +3446,7 @@ specifiers:
   discord-giveaways: ^4.2.1
   discord.js: ^12.5.3
   express: ^4.17.1
+  film-apisi: ^1.0.0
   generate-password: ^1.6.0
   hastebin-gen: ^2.0.5
   jimp: ^0.12.1
