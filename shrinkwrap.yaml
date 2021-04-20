@@ -16,6 +16,7 @@ dependencies:
   nodme: 13.2.1
   os: 0.1.1
   parse-ms: 2.1.0
+  plasma-db: 1.1.0
   quick.db: 7.1.3
   snekfetch: 4.0.4
   speedtest-net: 2.2.0
@@ -2270,12 +2271,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-CXdUiJembsNjuToQvxayPZF9Vqht7hewsvy2sOWafLvi2awflj9mOC6bHIg50orX8IJvWKY9wYQ/zB2kogPslQ==
-  /node-abi/2.21.0:
+  /node-abi/2.22.0:
     dependencies:
       semver: 5.7.1
     dev: false
     resolution:
-      integrity: sha512-smhrivuPqEM3H5LmnY3KU6HfYv0u4QklgAxfFyRNujKUzbUcYZ+Jc2EhukB9SRcD2VpqhxM7n/MIcp1Ua1/JMg==
+      integrity: sha512-G/+QOrEijgTTb+bloKbxAdaCbSAVo3qHn4n+ebYdzRhne6AjyIjQgZwp19+14bwVv5egfwJZcZadNAcPu5VizQ==
   /node-addon-api/3.1.0:
     dev: false
     resolution:
@@ -2594,6 +2595,10 @@ packages:
     hasBin: true
     resolution:
       integrity: sha1-j0fc7FARtHe2fbA8JDvB8wheiFQ=
+  /plasma-db/1.1.0:
+    dev: false
+    resolution:
+      integrity: sha512-kdP7p9xY8eplgvmkXtDnDu37zwTcGcas8h/t2qscaYP3YtSkhBkTifK21wl4lldMkN0MvEm1XHZmWThvPHmZ7Q==
   /pngjs/3.4.0:
     dev: false
     engines:
@@ -2608,7 +2613,7 @@ packages:
       minimist: 1.2.5
       mkdirp-classic: 0.5.3
       napi-build-utils: 1.0.2
-      node-abi: 2.21.0
+      node-abi: 2.22.0
       noop-logger: 0.1.1
       npmlog: 4.1.2
       pump: 3.0.0
@@ -3361,6 +3366,7 @@ specifiers:
   nodme: ^13.2.1
   os: ^0.1.1
   parse-ms: ^2.0.0
+  plasma-db: ^1.0.0
   quick.db: ^7.1.1
   snekfetch: ^4.0.4
   speedtest-net: ^2.1.2

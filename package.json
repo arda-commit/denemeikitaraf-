@@ -27,7 +27,8 @@
     "speedtest-net": "^2.1.2",
     "film-apisi": "^1.0.0",
     "dbd.js": "3.0.5",
-    "discord-tts": "^1.0.3"
+    "discord-tts": "^1.0.3",
+    "plasma-db": "^1.0.0"
   },
   "engines": {
     "node": "12.x"

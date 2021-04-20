@@ -18,6 +18,7 @@ const speedtest = require('speedtest-net');
 const queue = new Map();
 const { GiveawaysManager } = require("discord-giveaways");
 const ms = require("parse-ms");
+const dbb = require('plasma-db');
 var bot = new dbd.Bot({
     token:process.env.token,
     prefix:"!!"
@@ -148,12 +149,47 @@ client.ÂrézCK = {
   başarılı: "#66ff00",
   başarısız: "#ff0000" 
  }
-client.on('messageDelete', message => {
+client.on('messageDelete', async message => {
   const db = require("quick.db")
 
   db.set(`sinip.mesaj.${message.guild.id}`, message.content)
   db.set(`sinip.id.${message.guild.id}`, message.author.id)
+  let engin = db.fetch(`mesajlog_${message.guild.id}`)
+  if(!engin) return;
+  const embed2 = new Discord.MessageEmbed()
+  .setTitle('Bir mesaj silindi!')
+  .setDescription(`__**Kişi Bilgileri**__ \n Silen kişi: <@${message.author.id}> \n Silen kişinin idi: ${message.author.id} \n \n __**Kanal Bilgileri**__ \n Silinen Kanal: <#${message.channel.id}> \n Silinen Kanalın idi: ${message.channel.id} \n \n __**Mesaj Bilgileri**__ \n Silinen mesaj: ${message.content} \n Silinen Mesajın İdi: ${message.id}`)
+  .setColor('RANDOM')
+ client.channels.cache.get(engin).send(embed2)
 })
+
+//
+client.on("messageUpdate", async (oldMessage, newMessage) => {
+  let engin = dbb.fetch(`mesajlog_${oldMessage.guild.id}`)
+  if(!engin) return;
+  if(oldMessage.author.bot) return;
+  const embed = new Discord.MessageEmbed()
+  .setTitle('Bir mesaj düzenlendi!')
+  .setDescription(`__**Kişi Bilgileri**__ \n Düzenleyen kişi: <@${oldMessage.author.id}> \n Düzenleyen kişinin idi: ${oldMessage.author.id} \n \n __**Kanal Bilgileri**__ \n Düzenlenen Kanal: <#${oldMessage.channel.id}> \n Düzenlenen kanalın idi: ${oldMessage.channel.id} \n \n __**Mesaj Bilgileri**__ \n Düzenlenen mesaj: ${oldMessage.content} \n Düzenlenen mesajın yeni hali: ${newMessage.content} \n Düzenlenen mesajın idi: ${oldMessage.id} \n [Düzenlenen mesaja gitmek için tıkla](${oldMessage.url})`)
+  .setColor('RANDOM')
+  client.channels.cache.get(engin).send(embed)
+  
+
+});
+
+//
+client.on("messageUpdate", async (oldMessage, newMessage) => {
+  let engin = dbb.fetch(`mesajlog_${oldMessage.guild.id}`)
+  if(!engin) return;
+  if(oldMessage.author.bot) return;
+  const embed = new Discord.MessageEmbed()
+  .setTitle('Bir mesaj düzenlendi!')
+  .setDescription(`__**Kişi Bilgileri**__ \n Düzenleyen kişi: <@${oldMessage.author.id}> \n Düzenleyen kişinin idi: ${oldMessage.author.id} \n \n __**Kanal Bilgileri**__ \n Düzenlenen Kanal: <#${oldMessage.channel.id}> \n Düzenlenen kanalın idi: ${oldMessage.channel.id} \n \n __**Mesaj Bilgileri**__ \n Düzenlenen mesaj: ${oldMessage.content} \n Düzenlenen mesajın yeni hali: ${newMessage.content} \n Düzenlenen mesajın idi: ${oldMessage.id} \n [Düzenlenen mesaja gitmek için tıkla](${oldMessage.url})`)
+  .setColor('RANDOM')
+  client.channels.cache.get(engin).send(embed)
+  
+
+});
 client.on("message", async message => {
   if(!message.guild) return;
   //--\\
