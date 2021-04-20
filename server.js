@@ -151,10 +151,11 @@ client.ÂrézCK = {
  }
 client.on('messageDelete', async message => {
   const db = require("quick.db")
+  const dbb = require('plasma-db')
 
   db.set(`sinip.mesaj.${message.guild.id}`, message.content)
   db.set(`sinip.id.${message.guild.id}`, message.author.id)
-  let engin = db.fetch(`mesajlog_${message.guild.id}`)
+  let engin = dbb.fetch(`mesajlog_${message.guild.id}`)
   if(!engin) return;
   const embed2 = new Discord.MessageEmbed()
   .setTitle('Bir mesaj silindi!')
