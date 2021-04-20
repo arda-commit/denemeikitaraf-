@@ -2,6 +2,7 @@ const chalk = require("chalk");
 const moment = require("moment");
 const Discord = require("discord.js");
 const ayarlar = require("../ayarlar.json");
+const db = require('quick.db');
 
 var prefix = ayarlar.prefix;
 
@@ -14,18 +15,23 @@ module.exports = client => {
       client.user.username
     } ismi ile giriş yapıldı!`
   );
-  client.user.setStatus("idle");
-  var oyun = [
-    "deneme",
-    " ",
-  
-  ];
-
-  setInterval(function() {
-    var random = Math.floor(Math.random() * (oyun.length - 0 + 1) + 0);
-
-    client.user.setActivity(oyun[random], "");
-  }, 2 * 2500);
+module.exports = client => {
+  var e = db.fetch(`botdurum_${client.user.id}`)
+  if(e === "dnd"){
+    client.user.setStatus("dnd")
+  }
+  else if(e === "idle"){
+    client.user.setStatus("idle")
+  }
+  else if(e === "online"){
+    client.user.setStatus("online")
+  }
+  else return;
+}
+  var prefix = "!"
+  var textcik = db.fetch(`oynaniyor_${client.user.id}`)
+  if(!textcik) return;
+  client.user.setActivity(textcik)
 };
  
 // BOTUM STATS KISMI

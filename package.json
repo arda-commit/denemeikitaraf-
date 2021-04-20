@@ -11,7 +11,6 @@
     "canvacord": "^5.1.0",
     "chalk": "^4.0.0",
     "common-tags": "^1.8.0",
-    "dbd.js": "3.0.5",
     "discord-giveaways": "^4.2.1",
     "discord.js": "^12.5.3",
     "express": "^4.17.1",
@@ -26,7 +25,8 @@
     "quick.db": "^7.1.1",
     "snekfetch": "^4.0.4",
     "speedtest-net": "^2.1.2",
-    "film-apisi": "^1.0.0"
+    "film-apisi": "^1.0.0",
+    "dbd.js":"3.0.5"
   },
   "engines": {
     "node": "12.x"
