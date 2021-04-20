@@ -1,61 +1,41 @@
 const Discord = require('discord.js');
-
-const db = require("quick.db")
-
-exports.run = async (client, message, args) => {
-
- if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send(new Discord.MessageEmbed()
-
-.setTitle(`Uyarı`)
-
-.setDescription(` Bu Komutu Kullanmak İçin; \`ADMINISTRATOR\` Yetkisine Sahip Olmalısın!`))
-
-  
-
-  
-
-   if(args[0] == "sıfırla") {
-
-    db.delete(`seviyekanal${message.guild.id}`)
-
-    return message.channel.send(` Seviye-Log sıfırlandı!`);
-
-  }
-
-    
-
-    
-
-   if (args[0]) {
-
-      let akanal =
-
-        message.mentions.channels.first() ||
-
-        message.guild.channels.cache.find(ff => ff.name === args.slice(1).join(" "));
-
-      db.set(`seviyekanal${message.guild.id}`, akanal.id);
-
-      message.channel.send(` Seviye Log Kanalı Ayarlandı! Ayarlanan Kanal: <#${akanal.id}> Sıfırlamak için !seviye-log sıfırla`)           
-
-    }
-
+const qdb = require('quick.db');
+exports.run = async(client, message, args) => {
+  const başarılı = client.ÂrézCK.başarılı
+  const başarısız = client.ÂrézCK.başarısız
+  if(!message.member.permissions.has("ADMINISTRATOR")) return message.channel.send(
+  new Discord.MessageEmbed()
+    .setColor(başarısız)
+    .setAuthor(`${client.user.username} Seviye Sistemi`, client.user.displayAvatarURL({dynamic: true, format: "png"}))
+    .setTitle(":x: Başarısız!")
+    .setDescription("Bu komutu kullanabilmek için `ADMINISTRATOR` yetkisine sahip olmalısın!")
+    .setFooter(`${message.author.tag} istedi!`, message.author.displayAvatarURL({dynamic: true, format: "png"}))
+  )
+  var kanal = message.mentions.channels.first() || message.guild.channels.cache.get(args[0]);
+  if(!kanal) return message.channel.send(
+  new Discord.MessageEmbed()
+    .setColor(başarısız)
+    .setAuthor(`${client.user.username} Seviye Sistemi`, client.user.displayAvatarURL({dynamic: true, format: "png"}))
+    .setTitle(":x: Başarısız!")
+    .setDescription(":warning: Bir kanal belirtmeniz gerekli!")
+    .setFooter(`${message.author.tag} istedi!`, message.author.displayAvatarURL({dynamic: true, format: "png"}))
+  )
+  qdb.set(`seviyelog_${message.guild.id}`, kanal.id)
+  return message.channel.send(
+  new Discord.MessageEmbed()
+    .setColor(başarılı)
+    .setAuthor(`${client.user.username} Seviye Sistemi`, client.user.displayAvatarURL({dynamic: true, format: "png"}))
+    .setTitle(":white_check_mark: Başarılı!")
+    .setDescription(`Seviye Log kanalı <#${kanal.id}> olarak ayarlandı!`)
+    .setFooter(`${message.author.tag} istedi!`, message.author.displayAvatarURL({dynamic: true, format: "png"}))
+  )
 };
-
 exports.conf = {
-
   enabled: true,
-
-  guildOnly: false,
-
+  guildOnly: false, 
   aliases: [],
-
   permLevel: 0
-
 };
-
 exports.help = {
-
-  name: 'seviye-log'
-
+  name: "seviye-log"
 };

@@ -1,49 +1,90 @@
 const Discord = require('discord.js');
+const qdb = require('quick.db');
+const canvacord = require('canvacord');
+exports.run = async(client, message, args) => {
+  const başarılı = client.ÂrézCK.başarılı
+  const başarısız = client.ÂrézCK.başarısız
+  var user = message.mentions.members.first()
+  //--\\
+  var sınır = qdb.fetch(`sınır_${message.author.id + message.guild.id}`)
+  if(!sınır){ var sınır = 250 }
+  //--\\
+  var xp = qdb.fetch(`xp_${message.author.id + message.guild.id}`)
+  //--\\
+  var seviye = qdb.fetch(`seviye_${message.author.id + message.guild.id}`)
+  if(!seviye){ var seviye = 0 }
+  //--\\
+  if(!user){
+    if(message.author.bot) return message.channel.send(
+    new Discord.MessageEmbed()
+    .setColor(başarısız)
+      .setAuthor(`${client.user.username} Seviye Sistemi`, client.user.displayAvatarURL({dynamic: true, format: "png"}))
+      .setTitle(":x: Başarısız!")
+      .setDescription(":warning: Botların seviyesi olmaz!")
+      .setFooter(`${message.author.tag} istedi!`, message.author.displayAvatarURL({dynamic: true, format: "png"}))
+    )
+    const rank = new canvacord.Rank()
+    .setAvatar(message.author.displayAvatarURL({dynamic: true, format: "png"}))
+    .setCurrentXP(xp)
+    .setRequiredXP(sınır)
+    .setStatus(message.author.presence.status)
+    .setProgressBar("#ff0000", "COLOR")
+    .setUsername(message.author.username)
+    .setLevel(seviye)
+    .setRank(0)
+    .setDiscriminator(message.author.discriminator);
 
-const db = require("quick.db")
+rank.build()
+    .then(data => {
+        const attachment = new Discord.MessageAttachment(data, "seviye.jpeg");
+        message.channel.send(attachment);
+    });
+  }
+  if(!user) return;
+    //--\\
+  var sınır = qdb.fetch(`sınır_${user.user.id + message.guild.id}`)
+  if(!sınır){ var sınır = 250 }
+  //--\\
+  if(user){
+  var xp = qdb.fetch(`xp_${user.user.id + message.guild.id}`)
+  if(!xp){ var xp = 0 }
+  //--\\
+  var seviye = qdb.fetch(`seviye_${user.user.id + message.guild.id}`)
+  if(!seviye){ var seviye = 0 }
+  //--\\
+  if(user){   
+  if(user.user.bot) return message.channel.send(
+    new Discord.MessageEmbed()
+    .setColor(başarısız)
+      .setAuthor(`${client.user.username} Seviye Sistemi`, client.user.displayAvatarURL({dynamic: true, format: "png"}))
+      .setTitle(":x: Başarısız!")
+      .setDescription(":warning: Botların seviyesi olmaz!")
+      .setFooter(`${message.author.tag} istedi!`, message.author.displayAvatarURL({dynamic: true, format: "png"}))
+    )
+      const rank = new canvacord.Rank()
+    .setAvatar(user.user.displayAvatarURL({dynamic: true, format: "png"}))
+    .setCurrentXP(xp)
+    .setRequiredXP(sınır)
+    .setStatus(user.user.presence.status)
+    .setProgressBar("#ff0000", "COLOR")
+    .setUsername(user.user.username)
+    .setLevel(seviye)
+    .setRank(0)
+    .setDiscriminator(user.user.discriminator);
 
-const ayarlar = require("../ayarlar.json")
-
-exports.run = async (client, message, args) => {
-
-  var user = message.mentions.users.first() || message.author;
-  var id = user.id
-  var gid = message.guild.id;
-
-  var lvl = await db.fetch(`lvl_${id}_${gid}`);
-  var xp = await db.fetch(`xp_${id}_${gid}`);
-  var xpToLvl = await db.fetch(`xpToLvl_${id}_${gid}`);
-  let u = message.mentions.users.first() || message.author;
-if(u.bot === true) { message.channel.send(new Discord.MessageEmbed()
-
-                        .setDescription("Botların seviyesi bulunmamaktadır!")
-                        .setColor("RANDOM"))}  
-
-  else 
-
-  message.channel.send(new Discord.MessageEmbed()
-  .setColor("RANDOM")
-  .setThumbnail(user.avatarURL)             
-  .setDescription(`
-  
-  ${user.username} **Kullanıcının Seviye Bilgisi;**
-  
-Kullanıcı: <@${user.id}>**
-Kullanıcının XP'si: \`${xp || 0}\`**
-Kullanıcının Seviye'si: \`${lvl || 0}\`**
-  `)
-  .setFooter(`${client.user.username} Seviye Sistemi!`, client.user.avatarURL())   
-  .setTimestamp())
-
-};
-
+rank.build()
+    .then(data => {
+        const attachment = new Discord.MessageAttachment(data, "seviye.jpeg");
+        message.channel.send(attachment);
+    });
+  }  }
+  };
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: [],
+  aliases: ['xp', 'level', 'rank'],
   permLevel: 0
 };
-
 exports.help = {
-  name: 'rank'
-};
+  name: "seviye"
+}
