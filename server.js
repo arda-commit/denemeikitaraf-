@@ -154,7 +154,7 @@ client.on("message", async msg => {
 
     if(msg.content.startsWith(ayarlar.prefix)) return;
   
-    const db = require('wio.db');
+    const db = require('quick.db');
   
     var id = msg.author.id;
   
@@ -284,7 +284,7 @@ client.on("message", async msg => {
   
     
   
-      if(message.content == '!rütbeler') {
+      if(message.content == '!!rütbeler') {
   
       if(!rrol) {
   
@@ -356,7 +356,7 @@ client.on("message", async msg => {
   
     }
   
-      if(message.content == '!seviyerolleri' || message.content == "!levelroles") {
+      if(message.content == '!!seviyerolleri' || message.content == "!levelroles") {
   
     if(!srol) {
   
