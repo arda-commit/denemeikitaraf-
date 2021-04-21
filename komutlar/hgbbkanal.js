@@ -24,7 +24,7 @@ exports.conf = {
   };
   
   exports.help = {
-    name: 'hg-mesajı',
+    name: 'hgbb-kanal',
     description: 'taslak', 
     usage: 'captcha'
   };

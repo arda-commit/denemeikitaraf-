@@ -177,6 +177,24 @@ client.on("messageUpdate", async (oldMessage, newMessage) => {
   
 
 });
+client.on("guildMemberAdd", async member => {
+    var engin = await db.fetch(`hgbbmesaj_${member.guild.id}`)
+    if(!engin) return;
+    const embed = new Discord.MessageEmbed()
+    .setTitle('Hoşgeldin!')
+    .setDescription(`<@${member.id}> sunucumuza katıldı hoşgeldin aramıza!`)
+    .setColor('RANDOM')
+    client.channels.cache.get(engin).send(embed);
+  })
+client.on("guildMemberRemove", async member => {
+    var engin = await db.fetch(`hgbbmesaj_${member.guild.id}`)
+    if(!engin) return;
+    const embed = new Discord.MessageEmbed()
+    .setTitle('Görüşürüz!')
+    .setDescription(`<@${member.id}> sunucumuzdan ayrıldı görüşürüz :(`)
+    .setColor('RANDOM')
+    client.channels.cache.get(engin).send(embed);
+  })
 
 //
 client.on("messageUpdate", async (oldMessage, newMessage) => {
@@ -222,3 +240,14 @@ client.on("message", async message => {
   logcuk.send(`${message.author} **${seviye + 1}** seviyesine ulaştı! Tebrikler ${message.author}`)
   }
 })
+client.on('message', async message => {
+if (message.content === 'fakekatıl') { // Buraya ne yazarsanız yazdığınız şeye göre çalışır
+  client.emit('guildMemberAdd', message.member || await message.guild.fetchMember(message.author));
+    }
+});
+client.on('message', async message => {
+if (message.content === 'fakeayrıl') { // Buraya ne yazarsanız yazdığınız şeye göre çalışır
+  client.emit('guildMemberRemove', message.member || await message.guild.fetchMember(message.author));
+    }
+});
+
