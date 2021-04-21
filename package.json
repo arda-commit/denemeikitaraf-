@@ -29,7 +29,8 @@
     "dbd.js": "3.0.5",
     "discord-tts": "^1.0.3",
     "plasma-db": "^1.0.0",
-    "@codare/codare.ai": "^1.0.1"
+    "@codare/codare.ai": "^1.0.1",
+    "random-anime": "^1.0.6"
   },
   "engines": {
     "node": "12.x"
