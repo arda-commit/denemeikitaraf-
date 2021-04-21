@@ -119,5 +119,5 @@ module.exports.conf = {
 module.exports.help = {
   name: "v11tov12",
   description: "Botta bulunan tüm komutları gösterir",
-  usage: "komutlar"
+  usage: "v11tov12"
 };
