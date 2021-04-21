@@ -15,6 +15,9 @@ module.exports = client => {
       client.user.username
     } ismi ile giriş yapıldı!`
   );
+  module.exports = client => {
+    client.user.setStatus("dnd")
+    }
 module.exports = client => {
   var e = db.fetch(`botdurum_${client.user.id}`)
   if(e === "dnd"){
