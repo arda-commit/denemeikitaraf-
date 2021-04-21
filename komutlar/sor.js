@@ -4,9 +4,7 @@ exports.run = async(client, message, args) => {
   var soru = args.slice(0).join(' ')
   if(!soru) return message.reply("Bir soru belirtin!")
   ai.sor(soru).then(res => message.channel.send(`
-  Soru: ${soru}
-  
-  Cevap: ${res}
+  ${res}
   `))
 }
 exports.conf = {
@@ -14,5 +12,3 @@ exports.conf = {
   permLvl: 0
 }
 exports.help = {name: "sor"}
-
-Komutlar / Sor.js
