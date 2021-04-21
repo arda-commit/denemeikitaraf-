@@ -32,7 +32,8 @@
     "@codare/codare.ai": "^1.0.1",
     "random-anime": "^1.0.6",
     "random-animal.js": "^1.0.3",
-    "randomfox": "^1.0.4"
+    "randomfox": "^1.0.4",
+    "oasis.db": "^3.3.0"
   },
   "engines": {
     "node": "12.x"
