@@ -30,5 +30,5 @@ client.user.setStatus("dnd")
 
     client.user.setActivity(oyun[random], "");
   }, 2 * 2500);
-us};"dnd")
+client.user.setStatus("dnd")
   }
