@@ -1,7 +1,8 @@
 const Discord = require('discord.js');
 exports.run = async (client, message, args) => {
   let mesaj = args.slice(0).join(' ')
-  if(!mesaj) 
+  if(!mesaj) return message.channel.send("bir mesaj gir")
+  message.channel.send(mesaj)
   
     }
 exports.conf = {
