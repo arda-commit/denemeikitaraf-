@@ -3,7 +3,7 @@ dependencies:
   canvacord: 5.1.0
   chalk: 4.1.1
   common-tags: 1.8.0
-  dbd.js: 3.0.5
+  dbd.js: 3.0.6
   discord-giveaways: 4.4.3
   discord-tts: 1.0.3
   discord.js: 12.5.3
@@ -22,6 +22,7 @@ dependencies:
   random-animal.js: 1.0.3
   random-anime: 1.0.6
   randomfox: 1.0.5
+  simple-play-store-search: 1.0.4
   snekfetch: 4.0.4
   speedtest-net: 2.2.0
 packages:
@@ -1012,11 +1013,11 @@ packages:
     dev: false
     resolution:
       integrity: sha512-3iZKDAKqv0APFwpqP40gpro5msM+pwhQN7IhB42mjbL1W4M2V6A+MJy7RhA8y6lUM+1mQoLls3OePidmzVbncQ==
-  /dbd.js/3.0.5:
+  /dbd.js/3.0.6:
     dependencies:
       '@discordjs/opus': 0.5.0
       danbot-hosting: 0.1.6
-      dbdjs.db: 1.0.1
+      dbdjs.db: 1.0.2
       discord.js: 12.5.3
       moment: 2.29.1
       ms-parser: 1.0.5
@@ -1029,15 +1030,15 @@ packages:
     engines:
       node: '>=12.11.0'
     resolution:
-      integrity: sha512-rLFkYXYJbMYd0wqhMJJXng88D4nQ3A9j6uDpxPDMoNUA+DmNiat79G9AQN0KOADfvl/Ok8ht0bRXkHA0AK4ZlQ==
-  /dbdjs.db/1.0.1:
+      integrity: sha512-tC5l8JCff8X+WVdLSzwvaHRy1e2pkRGqbvoQ3Pete1uZJ27wkeBsSECKkyri0OXKS14UH8BRJsEC8TNU56PVmA==
+  /dbdjs.db/1.0.2:
     dependencies:
       fs: 0.0.1-security
     dev: false
     engines:
       node: '>=12.11.0'
     resolution:
-      integrity: sha512-mHR3vMS/1OGdAATfRM1v0jYR7oTakQ2FxkeJvuRz9rkLsx82dfaCAYCTQk/52HTju8l9Gr475oMgTw+l8lwbdA==
+      integrity: sha512-R6yEmqLKp4ZRPYsKGmkWRDRqBYnVUcxFl9BjsNpLRCKgWWkoBCRa80sFS1joF8BIqQtN0ivCOJlKU0kEVaU+JA==
   /debug/2.6.9:
     dependencies:
       ms: 2.0.0
@@ -2390,12 +2391,12 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-D6MUW4K/VzoJ4rJ01JFKxDrtY1v9wrgzCX5f2qj/lzH1m/lW6MhUZFKerVsnyjOhOsYzI9Kqqak+10l4LvLpMw==
-  /npm-bundled/1.1.1:
+  /npm-bundled/1.1.2:
     dependencies:
       npm-normalize-package-bin: 1.0.1
     dev: false
     resolution:
-      integrity: sha512-gqkfgGePhTpAEgUsGEgcq1rqPXA+tv/aVBlgEzfXwA1yiUJF7xtEt3CtVwOjNYQOVknDk0F20w58Fnm3EtG0fA==
+      integrity: sha512-x5DHup0SuyQcmL3s7Rx/YQ8sbw/Hzg0rj48eN0dV7hf5cmQq5PXIeioroH3raV1QC1yh3uTYuMThvEQF3iKgGQ==
   /npm-conf/1.1.3:
     dependencies:
       config-chain: 1.1.12
@@ -2412,7 +2413,7 @@ packages:
   /npm-packlist/1.4.8:
     dependencies:
       ignore-walk: 3.0.3
-      npm-bundled: 1.1.1
+      npm-bundled: 1.1.2
       npm-normalize-package-bin: 1.0.1
     dev: false
     resolution:
@@ -2903,6 +2904,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-bCR6cP+aTdScaQCnQKbPKtJOKDp/hj9EDLJo3Nw4y1QksqaovlW/bnptB6/c1e+qmNIDHRK+oXFDdEqBT8WzUA==
+  /simple-play-store-search/1.0.4:
+    dependencies:
+      node-fetch: 2.6.1
+    dev: false
+    resolution:
+      integrity: sha512-dMX9v0adknxQty16KURR8QrglT6ThQCDUuP1TmrE8YLP+I698a1DDXFM0oYpM7mL6SSXU3DojdGMJYTr4yccWg==
   /snekfetch/4.0.4:
     deprecated: use node-fetch instead
     dev: false
@@ -3377,7 +3384,7 @@ specifiers:
   canvacord: ^5.1.0
   chalk: ^4.0.0
   common-tags: ^1.8.0
-  dbd.js: 3.0.5
+  dbd.js: ^3.0.6
   discord-giveaways: ^4.2.1
   discord-tts: ^1.0.3
   discord.js: ^12.5.3
@@ -3396,5 +3403,6 @@ specifiers:
   random-animal.js: ^1.0.3
   random-anime: ^1.0.6
   randomfox: ^1.0.4
+  simple-play-store-search: ^1.0.4
   snekfetch: ^4.0.4
   speedtest-net: ^2.1.2
