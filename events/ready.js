@@ -17,6 +17,18 @@ module.exports = client => {
   );
     }
 module.exports = client => {
-  client.user.setActivity("2 taraflı bot")
-  client.user.setStatus("dnd")
+var oyun = [
+    ".",
+    "..",
+    "... ",
+    "...."
+  
+  ];
+client.user.setStatus("dnd")
+  setInterval(function() {
+    var random = Math.floor(Math.random() * (oyun.length - 0 + 1) + 0);
+
+    client.user.setActivity(oyun[random], "");
+  }, 2 * 2500);
+us};"dnd")
   }
