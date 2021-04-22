@@ -16,8 +16,7 @@ module.exports = client => {
     } ismi ile giriş yapıldı!`
   );
     }
- 
-// BOTUM STATS KISMI
-//dnd : rahatsız etme
-//idle : boşta 
-//online : çevrimiçi
+module.exports = client => {
+  client.user.setActivity("2 taraflı bot")
+  client.user.setStatus("dnd")
+  }
