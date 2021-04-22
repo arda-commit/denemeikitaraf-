@@ -15,27 +15,7 @@ module.exports = client => {
       client.user.username
     } ismi ile giriş yapıldı!`
   );
-  module.exports = client => {
-    client.user.setStatus("dnd")
     }
-module.exports = client => {
-  var e = db.fetch(`botdurum_${client.user.id}`)
-  if(e === "dnd"){
-    client.user.setStatus("dnd")
-  }
-  else if(e === "idle"){
-    client.user.setStatus("idle")
-  }
-  else if(e === "online"){
-    client.user.setStatus("online")
-  }
-  else return;
-}
-  var prefix = "!"
-  var textcik = db.fetch(`oynaniyor_${client.user.id}`)
-  if(!textcik) return;
-  client.user.setActivity(textcik)
-};
  
 // BOTUM STATS KISMI
 //dnd : rahatsız etme
