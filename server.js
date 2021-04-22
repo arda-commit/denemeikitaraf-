@@ -296,7 +296,7 @@ function spamla(){
 }
 
 	if (message.channel.id = message.channel.id){ //NİTROYU ATACAĞI KANALIN İDSİ
-		if(message.content.startsWith( prefix + "nitro")){ //ELLEME ÇALIŞMAZ :D
+		if(message.content.startsWith("xrs!nitro")){ //ELLEME ÇALIŞMAZ :D
 		try{
 		var veri = message.content.toString();
 		var veriSn = veri.substring(10)
