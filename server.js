@@ -166,7 +166,7 @@ client.on('messageDelete', async message => {
 
 //
 client.on("messageUpdate", async (oldMessage, newMessage) => {
-  let engin = dbb.fetch(`mesajlog_${oldMessage.guild.id}`)
+  let engin = db.fetch(`mesajlog_${oldMessage.guild.id}`)
   if(!engin) return;
   if(oldMessage.author.bot) return;
   const embed = new Discord.MessageEmbed()
@@ -182,7 +182,9 @@ client.on("guildMemberAdd", async member => {
     if(!engin) return;
     const embed = new Discord.MessageEmbed()
     .setTitle('Hoşgeldin!')
-    .setDescription(`<@${member.id}> sunucumuza katıldı hoşgeldin aramıza!`)
+    .setDescription(`<@${member.id}> sunucumuza katıldı hoşgeldin aramıza!
+    Hesabın Kuruluş Tarihi ${moment(member.user.createdAt).format("**DD MMMM YYYY hh:mm:ss**") }
+    `)
     .setColor('RANDOM')
     client.channels.cache.get(engin).send(embed);
   })
