@@ -337,3 +337,5 @@ client.on('message', msg => {
     function stop() {
     }
 }});
+client.on('message', msg => {
+  });

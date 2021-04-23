@@ -34,7 +34,8 @@
     "random-animal.js": "^1.0.3",
     "randomfox": "^1.0.4",
     "simple-play-store-search": "^1.0.4",
-    "yt-search": "^2.7.7"
+    "yt-search": "^2.7.7",
+    "fastify": "^3.15.0"
   },
   "engines": {
     "node": "12.x"
