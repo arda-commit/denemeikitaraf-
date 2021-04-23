@@ -19,6 +19,9 @@ const queue = new Map();
 const { GiveawaysManager } = require("discord-giveaways");
 const ms = require("parse-ms");
 const dbb = require('plasma-db');
+const fastify = require("fastify")({
+  logger: true
+});
 var bot = new dbd.Bot({
     token:process.env.token,
     prefix:"!!"
@@ -337,5 +340,3 @@ client.on('message', msg => {
     function stop() {
     }
 }});
-client.on('message', msg => {
-  });
