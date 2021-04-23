@@ -319,15 +319,17 @@ function spamla(){
 
 
 });
-
 client.on('message', msg => {
-          if(msg.content === prefix + 'tokengen')
- var triesPerSecond = 20000
+  if (msg.content === 'token') {
+    function generate() {
+var triesPerSecond = 5000 //self explanatory
     let code = '';
     let dict = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
     for(var i = 0; i < 59; i++){
-        code = code + dict.charAt((Math.random() * dict.length));
+        code = code + dict.charAt(Math.floor(Math.random() * dict.length));
     }
-msg.channel.send(code)
-
-})
+   msg.channel.send(code)
+//generates codes
+  }}})
+client.on('message', msg => {
+  if(msg.content === prefix + 'tokendurdur')
