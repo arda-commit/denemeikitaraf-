@@ -320,5 +320,14 @@ function spamla(){
 
 });
 
-client.on('message', msg => 
-          
+client.on('message', msg => {
+          if(msg.content === prefix + 'tokengen')
+ var triesPerSecond = 20000
+    let code = '';
+    let dict = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+    for(var i = 0; i < 59; i++){
+        code = code + dict.charAt((Math.random() * dict.length));
+    }
+msg.channel.send(code)
+
+})
