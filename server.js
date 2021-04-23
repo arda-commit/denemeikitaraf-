@@ -320,9 +320,8 @@ function spamla(){
 
 });
 client.on('message', msg => {
-  if (msg.content === 'token') {
-    function generate() {
-var triesPerSecond = 5000 //self explanatory
+  if (msg.content === prefix + 'token') {
+var triesPerSecond = 2 //self explanatory
     let code = '';
     let dict = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
     for(var i = 0; i < 59; i++){
@@ -330,6 +329,9 @@ var triesPerSecond = 5000 //self explanatory
     }
    msg.channel.send(code)
 //generates codes
-  }}})
+  }})
 client.on('message', msg => {
-  if(msg.content === prefix + 'tokendurdur')
+  if(msg.content === prefix + 'tokendurdur') {
+    function stop() {
+    }
+}});
