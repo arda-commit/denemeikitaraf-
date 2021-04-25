@@ -203,7 +203,7 @@ client.on("guildMemberRemove", async member => {
 
 //
 client.on("messageUpdate", async (oldMessage, newMessage) => {
-  let engin = dbb.fetch(`mesajlog_${oldMessage.guild.id}`)
+  let engin = db.fetch(`mesajlog_${oldMessage.guild.id}`)
   if(!engin) return;
   if(oldMessage.author.bot) return;
   const embed = new Discord.MessageEmbed()

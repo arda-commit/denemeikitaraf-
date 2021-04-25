@@ -4,6 +4,7 @@ exports.run = async(client, message, args) => {
   var soru = args.slice(0).join(' ')
   if(!soru) return message.reply("Bir soru belirtin!")
   ai.sor(soru).then(res => message.channel.send(`
+  
   ${res}
   `))
 }
