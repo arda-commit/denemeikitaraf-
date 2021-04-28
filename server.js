@@ -64,9 +64,6 @@ $else
 inek avladın!
 $setUserVar[inek;$sum[$getUserVar[inek];1];$authorID]
 $else
-ördek avladın!
-$setUserVar[ördek;$sum[$getUserVar[ördek];1];$authorID]
-$else
 balina avladın!
 $setUserVar[balina;$sum[$getUserVar[balina];1];$authorID]
 $else
@@ -87,8 +84,7 @@ $setUserVar[kuş;$sum[$getUserVar[kuş];1];$authorID]
 $else
 kedi avladın!
 $setUserVar[kedi;$sum[$getUserVar[kedi];1];$authorID]
-$else00;380]rekiyor.]   
-$50soYeniden avlanmak için 50 saniye beklemelisin]melisn.]
+$endif
 `
 })
 
