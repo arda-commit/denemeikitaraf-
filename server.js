@@ -54,10 +54,10 @@ bot.variables({
 bot.command({
 name: "avlan",
 code:`
-$if[$randomText[a;b;c;d;e;f;g;h;i;z;h]==a]
+$if[$randomText[a;b;c;h;i;z;d;e;f;s;h]==a]
 Arı avladın!
 $setUserVar[arı;$sum[$getUserVar[arı];1];$authorID]
-$else
+$elseIf[$randomText[a;b;c;h;i;z;d;e;f;s;h]==a]
 at avladın!
 $setUserVar[at;$sum[$getUserVar[at];1];$authorID]
 $else
