@@ -67,10 +67,28 @@ $else
 ördek avladın!
 $setUserVar[ördek;$sum[$getUserVar[ördek];1];$authorID]
 $else
-Arı avladın!
-$setUserVar[arı;$sum[$getUserVar[arı];1];$authorID]
+balina avladın!
+$setUserVar[balina;$sum[$getUserVar[balina];1];$authorID]
+$else
+domuz avladın!
+$setUserVar[domuz;$sum[$getUserVar[domuz];1];$authorID]
+$else
+böcek avladın!
+$setUserVar[böcek;$sum[$getUserVar[böcek];1];$authorID]
+$else
+kedi avladın!
+$setUserVar[kedi;$sum[$getUserVar[kedi];1];$authorID]
+$else
+timsah avladın!
+$setUserVar[timsah;$sum[$getUserVar[timsah];1];$authorID]
+$else
+kuş avladın!
+$setUserVar[kuş;$sum[$getUserVar[kuş];1];$authorID]
+$else
+kedi avladın!
+$setUserVar[kedi;$sum[$getUserVar[kedi];1];$authorID]
 $else00;380]rekiyor.]   
-$50soYeniden avlanmak için 50 saniye beklemelisin]melisin.]
+$50soYeniden avlanmak için 50 saniye beklemelisin]melisn.]
 `
 })
 
