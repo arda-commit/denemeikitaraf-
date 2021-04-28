@@ -37,7 +37,14 @@ for(const file of reader) {
     })
 }
 bot.variables({
-  coin:"100"
+  coin:"100",
+  kedi:"0",
+  köpek:"0",
+  ördek:"0",
+  sinek:"0",
+  kuş:"0",
+  balina:"0",
+  timsah:"0",
 })
 const app = express();
 app.get("/", (request, response) => {
