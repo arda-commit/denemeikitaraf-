@@ -45,7 +45,35 @@ bot.variables({
   kuş:"0",
   balina:"0",
   timsah:"0",
+  inek:"0",
+  at:"0",
+  domuz:"0",
+  böcek:"0",
+  arı:"0"
 })
+bot.command({
+name: "avlan",
+code:`
+$if[$randomText[a;b;c;d;e;f;g;h;i;z;h]==a]
+Arı avladın!
+$setUserVar[arı;$sum[$getUserVar[arı];1];$authorID]
+$else
+at avladın!
+$setUserVar[at;$sum[$getUserVar[at];1];$authorID]
+$else
+inek avladın!
+$setUserVar[inek;$sum[$getUserVar[inek];1];$authorID]
+$else
+ördek avladın!
+$setUserVar[ördek;$sum[$getUserVar[ördek];1];$authorID]
+$else
+Arı avladın!
+$setUserVar[arı;$sum[$getUserVar[arı];1];$authorID]
+$else00;380]rekiyor.]   
+$50soYeniden avlanmak için 50 saniye beklemelisin]melisin.]
+`
+})
+
 const app = express();
 app.get("/", (request, response) => {
   console.log(Date.now() + "7/24 AKTİF TUTMA İŞLEMİ BAŞARILI");
