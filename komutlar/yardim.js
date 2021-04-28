@@ -23,7 +23,7 @@ ${prefix}mesaj (bot yazdığınız şeyi yazar)
 ${prefix}yazıyor (bot kanala yazıyor gibi görünür)
 ${prefix}yazıyordurdur (botun kanala yazmasını durdurur)
 ${prefix}çalış (çalışırsınız)
-${prefix}cf (belirttiğiniz miktarda kumar oynarsınız)(not: paranız eksiye düşer eğer 0ın altına inerseniz)
+${prefix}cf (belirttiğiniz miktarda kumar oynarsınız)
 ${prefix}günlük (günlük coininizi alırsınız)
 ${prefix}coin (coininize bakarsınız)
 --------------------------------------------------------
