@@ -13,5 +13,6 @@ module.exports = {
   $onlyIf[$message=<0;0ın üstünde 1 rakam girin!]
   $argsCheck[1;bir sayı gir]
   $suppressErrors[Lütfen doğru bir sayı girin!]
+  $globalCooldown[3s;3 saniye bekle]
   `
   }
