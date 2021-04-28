@@ -36,7 +36,9 @@ for(const file of reader) {
         code: command.code
     })
 }
-
+bot.variables({
+  coin:"100"
+})
 const app = express();
 app.get("/", (request, response) => {
   console.log(Date.now() + "7/24 AKTİF TUTMA İŞLEMİ BAŞARILI");
