@@ -57,34 +57,41 @@ code:`
 $if[$randomText[a;b;c;h;i;z;d;e;f;s;h]==a]
 Arı avladın!
 $setUserVar[arı;$sum[$getUserVar[arı];1];$authorID]
-$elseIf[$randomText[a;b;c;h;i;z;d;e;f;s;h]==a]
+$elseIf[$randomText[a;b;c;h;i;z;d;e;f;s;h]==b]
 at avladın!
 $setUserVar[at;$sum[$getUserVar[at];1];$authorID]
-$else
+$endelseIf
+$elseIf[$randomText[a;b;c;h;i;z;d;e;f;s;h]==c]
 inek avladın!
 $setUserVar[inek;$sum[$getUserVar[inek];1];$authorID]
-$else
+$endelseIf
+$elseIf[$randomText[a;b;c;h;i;z;d;e;f;s;h]==h]
 balina avladın!
 $setUserVar[balina;$sum[$getUserVar[balina];1];$authorID]
-$else
+$elseIf[$randomText[a;b;c;h;i;z;d;e;f;s;h]==i]
 domuz avladın!
 $setUserVar[domuz;$sum[$getUserVar[domuz];1];$authorID]
-$else
+$elseIf[$randomText[a;b;c;h;i;z;d;e;f;s;h]==z]
 böcek avladın!
 $setUserVar[böcek;$sum[$getUserVar[böcek];1];$authorID]
-$else
+$endelseIf
+$elseIf[$randomText[a;b;c;h;i;z;d;e;f;s;h]==d]
 kedi avladın!
 $setUserVar[kedi;$sum[$getUserVar[kedi];1];$authorID]
-$else
+$endelseIf
+$elseIf[$randomText[a;b;c;h;i;z;d;e;f;s;h]==e]
 timsah avladın!
 $setUserVar[timsah;$sum[$getUserVar[timsah];1];$authorID]
-$else
+$endelseIf
+$elseIf[$randomText[a;b;c;h;i;z;d;e;f;s;h]==f]
 kuş avladın!
 $setUserVar[kuş;$sum[$getUserVar[kuş];1];$authorID]
-$else
+$endelseIf
+$elseIf[$randomText[a;b;c;h;i;z;d;e;f;s;h]==s]
 kedi avladın!
 $setUserVar[kedi;$sum[$getUserVar[kedi];1];$authorID]
 $endif
+$endelseIf
 `
 })
 
