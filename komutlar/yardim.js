@@ -1,5 +1,6 @@
 exports.run = (client, message, args) => {
 const Discord = require('discord.js')
+const ayarlar = require("../ayarlar.json")
 const embed = new Discord.MessageEmbed()
 .setTitle('Yardım menüsü')
 .setDescription(`
@@ -16,6 +17,8 @@ const embed = new Discord.MessageEmbed()
 !!kullanıcıbilgi (kullanıcının bilgilerine bakarsınız)
 !!deprembilgi (son 10 depremi ve bilgilerini sıralar)
 !!dosyaoluştur (dosya oluşturursunuz)
+!!kullanıcibilgi (kullanıcının bilgisine bakarsınız)
+!!mesaj
 --------------------------------------------------------
         -------sahip yardım---------
 !!load (bir komutu yükler)

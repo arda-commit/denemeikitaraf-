@@ -23,19 +23,18 @@ exports.run = (bot, message, params) => {
    .addField('Oluşturma tarihi:', message.guild.createdAt, true)
    .setFooter('Sunucu bilgi', message.guild.iconURL)
    .setTimestamp()
-   message.channel.send({embed});
-   message.react('✅')
+   message.channel.send(embed);
  };
 
  exports.conf = {
    enabled: true,
    guildOnly: false,
-   aliases: [],
-   permLevel: 2
+   aliases: ["sunucubilgi","sunucu-bilgi","sbilgi","sb"],
+   permLevel: 0
  };
 
  exports.help = {
-   name: 'sunucubilgi',
-   description: 'Sunucu bilgisini söyler.',
-   usage: 'sunucubilgi'
+   name: "sunucu",
+   description: "Sunucu bilgisini söyler.",
+   usage: "sunucu"
  };
