@@ -7,7 +7,10 @@ module.exports.run = async (client, message, args) => {
    Bir prefix girin! örnek: m!
    `)
    if(!prefix) return message.channel.send(prefixayarlamesajhata)
-  if(prefix > "3") return message.channel.send("prefixin uzunluğu en fazla 3 olabilir!")
+  const prefixuzunlukhata = new Discord.MessageEmbed()
+  .setTitle("hata")
+  .setDescription("prefixin uzunluğu en azla 3 olabilir!")
+  if(prefix>"3") return message.channel.send(prefixuzunlukhata)
   const prefixayarlandi = new Discord.MessageEmbed()
   .setTitle("prefix ayarlandı")
   .setDescription(`prefix başarıyla \`${prefix}\` olarak ayarlandı!`)
