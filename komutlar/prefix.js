@@ -6,8 +6,9 @@ module.exports.run = async (client, message, args) => {
    .setDescription(`
    Bir prefix girin! örnek: m!
    `)
+   if(prefix == "sıfırla") return db.set(`prefix_${message.guild.id}, "!!"`)
+  if(prefix == "sıfırla") return message.channel.send("".) 
    if(!prefix) return message.channel.send(prefixayarlamesajhata)
-if(prefix > "3") return message.channel.send("prefixin uzunluğu en fazla 3 olabilir!")
   const prefixayarlandi = new Discord.MessageEmbed()
   .setTitle("prefix ayarlandı")
   .setDescription(`prefix başarıyla \`${prefix}\` olarak ayarlandı!`)
