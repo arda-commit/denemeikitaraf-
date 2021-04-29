@@ -17,11 +17,11 @@ if(prefix > 3) return message.channel.send("prefixin uzunluğu en fazla 3 olabil
 module.exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ["taslak"]
+  aliases: ["prefix-ayarla",'prefixayarla']
 };
 
 module.exports.help = {
-  name: "taslak",
+  name: "prefix",
   description: "",
   usage: ""
 };
