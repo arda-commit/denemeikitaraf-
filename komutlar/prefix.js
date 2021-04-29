@@ -7,17 +7,20 @@ module.exports.run = async (client, message, args) => {
    Bir prefix girin! örnek: m!
    `)
    if(!prefix) return message.channel.send(prefixayarlamesajhata)
-if(prefix > 3) return message.channel.send("prefixin uzunluğu en fazla 3 olabilir!")
+if(prefix > "3") return message.channel.send("prefixin uzunluğu en fazla 3 olabilir!")
+  if(prefix == prefix) return message.channel.send(`prefix zaten ${prefix}`)
   const prefixayarlandi = new Discord.MessageEmbed()
   .setTitle("prefix ayarlandı")
   .setDescription(`prefix başarıyla \`${prefix}\` olarak ayarlandı!`)
   message.channel.send(prefixayarlandi)
   db.set(`prefix_${message.guild.id}`, prefix)
+  if(!message.member.hasPerission("MANAGE_GUILD")) return message.channel.send(`bu komutu kullanabilmek için \`Sunucuyu Yönet\` yetkisine sahip olman lazım!`)
 };
 module.exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ["prefix-ayarla",'prefixayarla']
+  aliases: [],
+  permLevel: 0
 };
 
 module.exports.help = {

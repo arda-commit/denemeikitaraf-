@@ -49,7 +49,8 @@ bot.variables({
   at:"0",
   domuz:"0",
   böcek:"0",
-  arı:"0"
+  arı:"0",
+  prefix:"!!"
 })
 
 const app = express();
