@@ -1,5 +1,6 @@
 const Discord = require("discord.js");
 const ayarlar = require('../ayarlar.json');
+const db = require("quick.db")
 let talkedRecently = new Set();
 
 module.exports = message => {
@@ -87,10 +88,8 @@ module.exports = message => {
 				message.channel.send({embed})
 				return
 			}
-		}
-    const Discord = require('discord.js');
-const db = require('quick.db');
-
+		
+}
 };
 };
 }

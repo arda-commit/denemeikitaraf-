@@ -1,7 +1,8 @@
 exports.run = (client, message, args) => {
 const Discord = require('discord.js')
 const ayarlar = require("../ayarlar.json")
-const prefix = ayarlar.prefix
+const db = require("quick.db")
+const prefix = db.fetch(`prefix_${message.guild.id}`)
 const embed = new Discord.MessageEmbed()
 .setTitle('Yardım menüsü')
 .setDescription(`
