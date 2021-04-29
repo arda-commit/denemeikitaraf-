@@ -80,6 +80,8 @@ module.exports = message => {
 		}
     if (perms < cmd.conf.permLevel) return;
     cmd.run(client, message, params, perms);
-  }
+    const Discord = require('discord.js');
+const db = require('quick.db');
 
+};
 };
