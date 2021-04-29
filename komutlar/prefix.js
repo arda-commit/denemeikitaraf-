@@ -8,7 +8,6 @@ module.exports.run = async (client, message, args) => {
    `)
    if(!prefix) return message.channel.send(prefixayarlamesajhata)
 if(prefix > "3") return message.channel.send("prefixin uzunluğu en fazla 3 olabilir!")
-  if(prefix == prefix) return message.channel.send(`prefix zaten ${prefix}`)
   const prefixayarlandi = new Discord.MessageEmbed()
   .setTitle("prefix ayarlandı")
   .setDescription(`prefix başarıyla \`${prefix}\` olarak ayarlandı!`)

@@ -24,7 +24,7 @@ const fastify = require("fastify")({
 });
 var bot = new dbd.Bot({
     token:process.env.token,
-    prefix:"!!"
+    prefix:"$getServerVar[prefix]"
 })
 bot.onMessage()
 bot.loadCommands(`./ekonomi/`)
