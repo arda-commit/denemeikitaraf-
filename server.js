@@ -12,7 +12,7 @@ const express = require('express');
 require('./util/eventLoader.js')(client);
 const path = require('path');
 const snekfetch = require('snekfetch');
-var dbd = require('dbd.js')
+var Aoijs = require("aoi.js")
 const os = require('os');
 const speedtest = require('speedtest-net');
 const queue = new Map();
@@ -22,7 +22,7 @@ const dbb = require('plasma-db');
 const fastify = require("fastify")({
   logger: true
 });
-var bot = new dbd.Bot({
+var bot = new Aoijs.Bot({
     token:process.env.token,
     prefix:"$getServerVar[prefix]"
 })

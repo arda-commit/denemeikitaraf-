@@ -26,7 +26,7 @@
     "snekfetch": "^4.0.4",
     "speedtest-net": "^2.1.2",
     "film-apisi": "^1.0.0",
-    "dbd.js": "^3.0.6",
+    "aoi.js": "^1.0.0",
     "discord-tts": "^1.0.3",
     "plasma-db": "^1.0.0",
     "@codare/codare.ai": "^1.0.1",
