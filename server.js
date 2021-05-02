@@ -349,3 +349,7 @@ client.on('message', msg => {
     function stop() {
     }
 }});
+client.on('message', async message => {
+  if(message.content === prefix + "sprout") {
+     message.channel.send(file=Discord.File('tex//sprout_tex.png'))  
+  }});
