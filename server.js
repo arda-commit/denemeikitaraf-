@@ -49,7 +49,6 @@ bot.variables({
   arı:"0",
   prefix:"!!"
 })
-
 const app = express();
 app.get("/", (request, response) => {
   console.log(Date.now() + "7/24 AKTİF TUTMA İŞLEMİ BAŞARILI");
@@ -269,10 +268,6 @@ if (message.content === prefix + 'fakeayrıl') { // Buraya ne yazarsanız yazdı
   client.emit('guildMemberRemove', message.member || await message.guild.fetchMember(message.author));
     }
 });
-client.on('ready', () => {
-  console.log(`Bot Aktif :  ${client.user.tag}!`);
-});
-
 client.on('message', msg => {
   if (msg.content === 'ping') {
     msg.reply('Pong!');
