@@ -79,7 +79,7 @@ exports.run = async (client, message, args) => {
 						await message.channel.send(`${user}, Çoook uzak galaksilerden gelen ultra sonik enerjiyi yeterki miktarda topladın ve **${damage}** hasar vurdun!!`);
 						dealDamage(damage);
 					} else {
-						await message.channel.send(`${user}, Çoook uzak galaksilerden gelen ultra sonik enerjiyi yeterli miktarda toplayamadığın için ulta güç kullanamadın!`);
+						await message.channel.send(`${user}, Çoook uzak galaksilerden gelen ultra sonik enerjiyi yeterli miktarda toplayamadığın için ultra güç kullanamadın!`);
 					}
 					reset();
 				} else if (choice === 'kaç') {
