@@ -10,6 +10,7 @@ module.exports.run = async (client, message, args) => {
   .setTitle("Rgb rol ayarlandı!")
   .setDescription(`rgb rolü başarıyla ${rgbrol} olarak ayarlandı!`)
   db.set(`rgbrol_${message.guild.id}`, rgbrol)
+  message.channel.send(basarili)
 };
 module.exports.conf = {
   enabled: true,
