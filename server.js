@@ -349,5 +349,3 @@ client.on('message', msg => {
     function stop() {
     }
 }});
-channel.send(file=Discord.File('tex//sprout_tex.png'))  
-  }});
