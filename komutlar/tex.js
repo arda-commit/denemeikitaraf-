@@ -1,9 +1,8 @@
 const Discord = require('discord.js');
-const generator = require('generate-password');
 
 
 exports.run = function(client, message, args) {
-    var uzunluk = args.slice(0).join(' ');
+    var tex = args.slice(0).join(' ');
   var karakterler = [
     "shelly",
     "nita",
@@ -44,23 +43,27 @@ exports.run = function(client, message, args) {
 "crow",
 "sandy",
 "amber",
-    "",
-"",
-"",
-"",
-""
+    "gale",
+"surge",
+"colette",
+"lou",
+"ruffs",
+    "belle"
     ]
+  const shelly = Discord.MessageEmbed()
+  .setImage("https://cdn.discordapp.com/attachments/838725812278132761/838725896226603038/shelly_v2_01.png")
+if(tex === "shelly") return message.channel.send(shelly)
 };  
 
 exports.conf = {
   enabled: true, 
   guildOnly: true, 
-  aliases: [],
+  aliases: ["texture"],
   permLevel: 0 
 };
 
 exports.help = {
-  name: 'şifre', 
-  description: 'Rastgele bir şifre oluşturur.',
-  usage: 'şifre <uzunluk>'
+  name: 'tex', 
+  description: 'karakterin texini verir',
+  usage: 'tex <karakter>'
 };
