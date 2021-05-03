@@ -54,7 +54,9 @@ if(tex === "shelly") return message.channel.send("https://cdn.discordapp.com/att
   if(tex === "colt") return message.channel.send("https://cdn.discordapp.com/attachments/838725812278132761/838733146257883156/colt_tex.png")
   if(tex === "nita") return message.channel.send("https://cdn.discordapp.com/attachments/838725812278132761/838734466380857364/nita_tex.png")
   if(tex === "bull") return message.channel.send("https://cdn.discordapp.com/attachments/838725812278132761/838736382767136768/bull_tex_01.png")
-  if(tex === "jessie") return message.channe.send("https://cdn.discordapp.com/attachments/838725812278132761//jessie_tex.png")
+  if(tex === "jessie") return message.channe.send("https://cdn.discordapp.com/attachments/838725812278132761/838737276803874826/jessie_tex.png")
+  if(tex === "brock") return message.channel.send("https://cdn.discordapp.com/attachments/838725812278132761/838739774806294568/brock_tex.png")
+  if(tex === "")
   
 };  
 
