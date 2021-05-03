@@ -349,12 +349,13 @@ client.on('message', msg => {
     function stop() {
     }
 }});
+
 client.on('message', async message => {
   if(message.content === prefix + "rgb") {
   const rol = db.fetch(`rgbrol_${message.guild.id}`)
 if(message.channel.type === "dm") return;
 setInterval(() => {
 message.guild.roles.cache.find(s => s.name === rol).setColor("RANDOM");
-  },250);
+  },350);
     }
     });
