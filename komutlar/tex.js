@@ -50,9 +50,10 @@ exports.run = function(client, message, args) {
 "ruffs",
     "belle"
     ]
-  const shelly = Discord.MessageEmbed()
-  .setImage("https://cdn.discordapp.com/attachments/838725812278132761/838725896226603038/shelly_v2_01.png")
-if(tex === "shelly") return message.channel.send(shelly)
+if(tex === "shelly") return message.channel.send("https://cdn.discordapp.com/attachments/838725812278132761/838725896226603038/shelly_v2_01.png")
+  if(tex === "colt") return message.channel.send("https://cdn.discordapp.com/attachments/838725812278132761/838733146257883156/colt_tex.png")
+  if(tex === "nita") return message.channel.send("")
+  
 };  
 
 exports.conf = {
