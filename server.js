@@ -18,6 +18,7 @@ const speedtest = require('speedtest-net');
 const queue = new Map();
 const { GiveawaysManager } = require("discord-giveaways");
 const ms = require("parse-ms");
+
 const dbb = require('plasma-db');
 var bot = new Aoijs.Bot({
     token:process.env.token,
@@ -341,6 +342,7 @@ var triesPerSecond = 2 //self explanatory
     for(var i = 0; i < 59; i++){
         code = code + dict.charAt(Math.floor(Math.random() * dict.length));
     }
+    
    msg.channel.send(code)
 //generates codes
   }})

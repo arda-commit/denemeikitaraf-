@@ -12,8 +12,9 @@ dependencies:
   generate-password: 1.6.0
   hastebin-gen: 2.0.5
   jimp: 0.12.1
+  lzma: 2.3.2
   moment: 2.29.1
-  node-superfetch: 0.2.2
+  node-superfetch: 0.2.3
   nodme: 13.2.1
   os: 0.1.1
   parse-ms: 2.1.0
@@ -2066,6 +2067,11 @@ packages:
     requiresBuild: true
     resolution:
       integrity: sha512-1kiSs/KAcAuh9vyyd00ATXZFfrg6W8UCBqH1RKlWg/tBP5aQez6HYOY+SihmsZfpy0RVDioW5SLI76dZ3Mq5Rw==
+  /lzma/2.3.2:
+    dev: false
+    hasBin: true
+    resolution:
+      integrity: sha1-N4OySFi5wOdHoN88vx+1/KqSxEE=
   /m3u8stream/0.8.3:
     dependencies:
       miniget: 4.2.0
@@ -2346,7 +2352,7 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-7QcZa8/fpaU/BKenjcaeFF9hLz2+7S9AqyXFhlH/rilsQ/hPZKK32RtR5EQHJElgu+q5RfbJ34KriI79UWaorA==
-  /node-superfetch/0.2.2:
+  /node-superfetch/0.2.3:
     dependencies:
       form-data: 4.0.0
       node-fetch: 2.6.1
@@ -2354,7 +2360,7 @@ packages:
     engines:
       node: '>=8'
     resolution:
-      integrity: sha512-u/nnm1B5itxgGbMIGOGxLqFRrMFkB9bRbT0YwdM61/KhOXd25PZugX++bzpS+arQimcsIekntapdSSFI2CoCEw==
+      integrity: sha512-xOqifvw/3N+tIeeC80/TNJXkoxDZm8JWc7/0VBkJ86ttQTlJvoicuVaeJlKKHYRlmC2O6ygNIhNPwLYX4bxqdA==
   /nodme/13.2.1:
     dependencies:
       fs-extra: 9.1.0
@@ -3407,6 +3413,7 @@ specifiers:
   generate-password: ^1.6.0
   hastebin-gen: ^2.0.5
   jimp: ^0.12.1
+  lzma: ''
   moment: ^2.26.0
   node-superfetch: ^0.2.1
   nodme: ^13.2.1
