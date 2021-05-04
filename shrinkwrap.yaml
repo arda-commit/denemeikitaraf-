@@ -1,9 +1,10 @@
 dependencies:
   '@codare/codare.ai': 1.0.2
-  aoi.js: 1.0.1
+  aoi.js: 1.0.6
   canvacord: 5.2.0
   chalk: 4.1.1
   common-tags: 1.8.0
+  croxydb: 0.0.7
   discord-giveaways: 4.5.1
   discord-tts: 1.0.3
   discord.js: 12.5.3
@@ -12,7 +13,6 @@ dependencies:
   generate-password: 1.6.0
   hastebin-gen: 2.0.5
   jimp: 0.12.1
-  lzma: 2.3.2
   moment: 2.29.1
   node-superfetch: 0.2.3
   nodme: 13.2.1
@@ -564,10 +564,9 @@ packages:
     dev: false
     resolution:
       integrity: sha512-uMgjozySS8adZZYePpaWs8cxB9/kdzmpX6SgJZ+wbz1K5eYk5QMYDVJaZKhxyIHUdnnJkfR7SVgStgH7LkGUyg==
-  /aoi.js/1.0.1:
+  /aoi.js/1.0.6:
     dependencies:
       '@discordjs/opus': 0.5.0
-      danbot-hosting: 0.1.6
       dbdjs.db: 1.0.2
       discord.js: 12.5.3
       moment: 2.29.1
@@ -576,12 +575,12 @@ packages:
       soundcloud-downloader: 0.2.4
       spotify-url-info: 2.2.0
       yt-search: 2.8.0
-      ytdl-core: 4.5.0
+      ytdl-core: 4.7.0
     dev: false
     engines:
       node: '>=12.11.0'
     resolution:
-      integrity: sha512-8PC8kHB4mC/HAMMzdSLHZb1SKj+jzNzlpWjphBzTRqSrroGX3drBZVXbKTDhcm/v/YWthj3bTSe+ym/M5YLoaQ==
+      integrity: sha512-IN/6n9yfIvmWmCIhip9C7/r8dvTJ3u4DaHyPDC1t1Z4CcV4spehqUFN4FnqMfV0uM/DgzwVh80E/uq/uRJ5JJA==
   /aproba/1.2.0:
     dev: false
     resolution:
@@ -690,7 +689,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==
-  /better-sqlite3/7.1.5:
+  /better-sqlite3/7.2.0:
     dependencies:
       bindings: 1.5.0
       prebuild-install: 6.1.2
@@ -698,7 +697,7 @@ packages:
     dev: false
     requiresBuild: true
     resolution:
-      integrity: sha512-HX5dN0zLllJLQOJP2tXqV42bvjXPnbe/Nl5o6nD1jj99h0148B39zbfGZVoJBLtDAd/CJc4Zdm8K+GhHIq84IQ==
+      integrity: sha512-pVhcTgsDJbv7K3us5o2Cyz6MIuGurHIgcDViHOmN1zs/FWf5A59tllLExHprP5NjZOlISsSeRSchjPkj4Sbg3g==
   /bindings/1.5.0:
     dependencies:
       file-uri-to-path: 1.0.0
@@ -1003,6 +1002,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-1eAtFWdIubi6T4XPy6ei9iUFoKpUkIF971QLN8lIvvvwueI65+Nw5haMNKUwfJxabqlIIDODJKGrQ66gxC0PbQ==
+  /croxydb/0.0.7:
+    dev: false
+    resolution:
+      integrity: sha512-Mjp0mnxT8DLtxQZogGDLBq+f1swu0UJqK4Xw4hN5T4RoA8HvPKCs0GmA6EapETrVW2e1hPOX2YMvKZr426yu4w==
   /css-select/1.2.0:
     dependencies:
       boolbase: 1.0.0
@@ -1023,12 +1026,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-m62ShEObQ39CfralilEQRjH6oAMtNCV1xJyEx5LpRYUVN+EviphDgUc/F3hnYbADmkiNs67Y+3ylmlG7Lnu+FA==
-  /danbot-hosting/0.1.6:
-    dependencies:
-      node-fetch: 2.6.1
-    dev: false
-    resolution:
-      integrity: sha512-O1ikNWddMwZk1ItfxC+NShYNfUtlAoj7Bum0ruccxVPCQjJLajlyy/3HBdBrCxXY9ua2Xa32DK90P+JjPHnGzg==
   /dasu/0.4.2:
     dev: false
     resolution:
@@ -2067,11 +2064,6 @@ packages:
     requiresBuild: true
     resolution:
       integrity: sha512-1kiSs/KAcAuh9vyyd00ATXZFfrg6W8UCBqH1RKlWg/tBP5aQez6HYOY+SihmsZfpy0RVDioW5SLI76dZ3Mq5Rw==
-  /lzma/2.3.2:
-    dev: false
-    hasBin: true
-    resolution:
-      integrity: sha1-N4OySFi5wOdHoN88vx+1/KqSxEE=
   /m3u8stream/0.8.3:
     dependencies:
       miniget: 4.2.0
@@ -2709,7 +2701,7 @@ packages:
       integrity: sha512-gjWOsm2SoGlgLEdAGt7a6slVOk9mGiXmPFMqrEhLQ68rhQuBnpfs3+EmlvqKyxnCo9/PPlF+9MtY02S1aFg+Jw==
   /quick.db/7.1.3:
     dependencies:
-      better-sqlite3: 7.1.5
+      better-sqlite3: 7.2.0
       lodash: 4.17.21
     dev: false
     resolution:
@@ -3386,7 +3378,7 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-tpRiSF42vW0T5aa0ebGqsoI3lq0/QpJXQ4JFTSIyknZIxCq3h0Pvjcctdmp8Huplq90/1Ma9/rxeAhpCFPe5tw==
-  /ytdl-core/4.5.0:
+  /ytdl-core/4.7.0:
     dependencies:
       m3u8stream: 0.8.3
       miniget: 4.2.0
@@ -3395,16 +3387,17 @@ packages:
     engines:
       node: '>=10'
     resolution:
-      integrity: sha512-e8r6skrakWNixsVlNPBMoRM1HrdW1swE97If9nenDUjF65uogYk4DvxIuqlmqRfBWKe+6aIZwqedNxUU9XLYJA==
+      integrity: sha512-G09HeYsyLMsUCPEuK2asDqmLnOx+n5SxVV3QqGJd+iYuw5Z/qiwx7x0gxZTiAkHBsbG3WuluJWBPswZyrygKmQ==
 registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
   '@codare/codare.ai': ^1.0.1
-  aoi.js: ^1.0.1
+  aoi.js: ^1.0.6
   canvacord: ^5.1.0
   chalk: ^4.0.0
   common-tags: ^1.8.0
+  croxydb: ^0.0.7
   discord-giveaways: ^4.2.1
   discord-tts: ^1.0.3
   discord.js: ^12.5.3
@@ -3413,7 +3406,6 @@ specifiers:
   generate-password: ^1.6.0
   hastebin-gen: ^2.0.5
   jimp: ^0.12.1
-  lzma: ''
   moment: ^2.26.0
   node-superfetch: ^0.2.1
   nodme: ^13.2.1

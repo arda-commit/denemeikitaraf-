@@ -35,8 +35,8 @@
     "randomfox": "^1.0.4",
     "simple-play-store-search": "^1.0.4",
     "yt-search": "^2.7.7",
-    "lzma": "^2.3.2",
-    "PIL": "^0.1.1"
+    "croxydb": "^0.0.7",
+    "discord-backup": "^2.5.0"
   },
   "engines": {
     "node": "12.x"
