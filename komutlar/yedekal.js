@@ -25,11 +25,10 @@ exports.run = async (client, message, args) => {
         });
     
         let embed = new prex.MessageEmbed()
-          .setTitle("<:tik_prex:796104548104011827> Yedek Alındı!")
+          .setTitle("Yedek Alındı!")
           .setDescription(`**Bilgilendirme**\n \n**Yedek ID'si **\n> \`\`\`${backupData.id}\`\`\`\n \n**Yedek Bilgisi İçin**\n> \`\`\`${config.prefix}yedek-bilgi ${backupData.id}\`\`\`\n \n**Yedeği Yüklemek İçin**\n> \`\`\`${config.prefix}yedek-yükle ${backupData.id}\`\`\``)
           .setColor("GREEN")
           .setTimestamp()
-          .setImage("https://cdn.discordapp.com/attachments/796027165870784562/796097183753043998/20210105_222533.jpg")
           .setThumbnail(message.guild.iconURL({ dynamic: true }))
           .setFooter(message.author.tag + " Tarafından Oluşturuldu!", message.author.avatarURL({ dynamic: true }));
         return message.channel.send(embed);
@@ -40,4 +39,14 @@ exports.run = async (client, message, args) => {
         );
       });
   }
+};
+exports.conf = {
+  enabled: true,
+  guildOnly: false,
+  aliases: [],
+  permLevel: 4
+};
+
+exports.help = {
+  name: 'yedek-al'
 };

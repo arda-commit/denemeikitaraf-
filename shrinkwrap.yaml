@@ -5,6 +5,7 @@ dependencies:
   chalk: 4.1.1
   common-tags: 1.8.0
   croxydb: 0.0.7
+  discord-backup: 2.5.0
   discord-giveaways: 4.5.1
   discord-tts: 1.0.3
   discord.js: 12.5.3
@@ -1188,6 +1189,12 @@ packages:
     hasBin: true
     resolution:
       integrity: sha1-+hN8S9aY7fVc1c0CrFWfkaTEups=
+  /discord-backup/2.5.0:
+    dependencies:
+      discord.js: 12.5.3
+    dev: false
+    resolution:
+      integrity: sha512-07xCibA41SND74FhUpOoJxN737wTI6sMYbWUUyfxtYfDK2bRFstOf4jwoZFTBlVNkK7PAkCEf6MdSFFgqHcg5w==
   /discord-giveaways/4.5.1:
     dependencies:
       deepmerge: 4.2.2
@@ -3398,6 +3405,7 @@ specifiers:
   chalk: ^4.0.0
   common-tags: ^1.8.0
   croxydb: ^0.0.7
+  discord-backup: ^2.5.0
   discord-giveaways: ^4.2.1
   discord-tts: ^1.0.3
   discord.js: ^12.5.3

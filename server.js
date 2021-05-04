@@ -18,7 +18,6 @@ const speedtest = require('speedtest-net');
 const queue = new Map();
 const { GiveawaysManager } = require("discord-giveaways");
 const ms = require("parse-ms");
-const lzma = require("lzma");
 const dbb = require('plasma-db');
 const croxydb = require("croxydb");
 var bot = new Aoijs.Bot({
