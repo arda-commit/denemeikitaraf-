@@ -319,8 +319,7 @@ function spamla(){
  		var saniye1 = saniye * 1000;
 		if (saniye > 1){
 		setInterval(spamla, saniye1);
-		}
-		
+		}		
 		else{
 			message.reply("Bir Hata Oluştu. Bu Arada En Az 2 Saniye Girmelisin");
 		}
