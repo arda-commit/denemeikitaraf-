@@ -27,7 +27,6 @@ dependencies:
   simple-play-store-search: 1.0.4
   snekfetch: 4.0.4
   speedtest-net: 2.2.0
-  user-instagram: 2.1.9
   yt-search: 2.8.0
 packages:
   /@babel/runtime/7.14.0:
@@ -3282,12 +3281,6 @@ packages:
       node: '>= 4'
     resolution:
       integrity: sha1-FQWgOiiaSMvXpDTvuu7FBV9WM6k=
-  /user-instagram/2.1.9:
-    dependencies:
-      axios: 0.21.1
-    dev: false
-    resolution:
-      integrity: sha512-3hxZIm4kQMoSKLOfWHF6B11gGKjSUqAwBOu07klLJOri+4jVDyf4UspO/sAW1/n0v0x+grKrOQrptI81AmyY9w==
   /utif/2.0.1:
     dependencies:
       pako: 1.0.11
@@ -3434,5 +3427,4 @@ specifiers:
   simple-play-store-search: ^1.0.4
   snekfetch: ^4.0.4
   speedtest-net: ^2.1.2
-  user-instagram: ^2.1.8
   yt-search: ^2.7.7
