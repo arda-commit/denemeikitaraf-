@@ -23,10 +23,11 @@ dependencies:
   quick.db: 7.1.3
   random-animal.js: 1.0.3
   random-anime: 1.0.6
-  randomfox: 1.0.5
+  randomfox: 1.0.7
   simple-play-store-search: 1.0.4
   snekfetch: 4.0.4
   speedtest-net: 2.2.0
+  user-instagram: 2.1.9
   yt-search: 2.8.0
 packages:
   /@babel/runtime/7.14.0:
@@ -690,7 +691,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==
-  /better-sqlite3/7.2.0:
+  /better-sqlite3/7.3.1:
     dependencies:
       bindings: 1.5.0
       prebuild-install: 6.1.2
@@ -698,7 +699,7 @@ packages:
     dev: false
     requiresBuild: true
     resolution:
-      integrity: sha512-pVhcTgsDJbv7K3us5o2Cyz6MIuGurHIgcDViHOmN1zs/FWf5A59tllLExHprP5NjZOlISsSeRSchjPkj4Sbg3g==
+      integrity: sha512-Io0eWFWEtHsA7KS7Ehm45AGwi5SHeCD1hIHd+b1nj26Tf7rFTBqMltuVDimNMNMJ6f+Oy29RT7XWinv3yWKvIQ==
   /bindings/1.5.0:
     dependencies:
       file-uri-to-path: 1.0.0
@@ -1269,12 +1270,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-Lgd2XcJ/NjEw+7tFvfKxOzCYKZsdct5lczQ2ZaQY8Djz7pfAD3Gbp8ySJWtreII/vDlMVmxwa6pHmdxIYgttDg==
-  /dotenv/8.2.0:
+  /dotenv/8.6.0:
     dev: false
     engines:
-      node: '>=8'
+      node: '>=10'
     resolution:
-      integrity: sha512-8sJ78ElpbDJBHNeBzUbUVLsqKdccaa/BXF1uPTw3GrvQTBgrQrtObr2mUrE38vzYd8cEv+m/JBfDLioYcfXoaw==
+      integrity: sha512-IrPdXQsk2BbzvCBGBOTmmSH5SodmqZNt4ERAZDmW4CT+tL8VtvinqywuANaFu4bOMWki16nqf0e4oC0QIaDr/g==
   /download/7.1.0:
     dependencies:
       archive-type: 4.0.0
@@ -2708,7 +2709,7 @@ packages:
       integrity: sha512-gjWOsm2SoGlgLEdAGt7a6slVOk9mGiXmPFMqrEhLQ68rhQuBnpfs3+EmlvqKyxnCo9/PPlF+9MtY02S1aFg+Jw==
   /quick.db/7.1.3:
     dependencies:
-      better-sqlite3: 7.2.0
+      better-sqlite3: 7.3.1
       lodash: 4.17.21
     dev: false
     resolution:
@@ -2729,10 +2730,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-vYl3iOX+4CKUWuxGi9Ukhie6fsqXqS9FE2Zaic4tNFD2N2QQaXOMFbuKK4QmDHC0JO6B1Zp41J0LpT0oR68amQ==
-  /randomfox/1.0.5:
+  /randomfox/1.0.7:
     dev: false
     resolution:
-      integrity: sha512-WAxzhwOXah9xBClemCSHu1up0w2FXBNNE0zeTh/+f+Ovxw3BURQxMlfCWzkG+yFDPaF1E/tO/PqbXDaTDFsGjw==
+      integrity: sha512-9qmJ+M51+nW1LZF+WThiJ0dbGvuiVklIxhhrO9YaNArh86/YtJmwKX+CdwBRDirNzWNn5vwnLmZ46QD+86jQXQ==
   /range-parser/1.2.1:
     dev: false
     engines:
@@ -2962,7 +2963,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.14.0
       axios: 0.21.1
-      dotenv: 8.2.0
+      dotenv: 8.6.0
       m3u8stream: 0.8.3
       soundcloud-key-fetch: 1.0.11
     dev: false
@@ -3281,6 +3282,12 @@ packages:
       node: '>= 4'
     resolution:
       integrity: sha1-FQWgOiiaSMvXpDTvuu7FBV9WM6k=
+  /user-instagram/2.1.9:
+    dependencies:
+      axios: 0.21.1
+    dev: false
+    resolution:
+      integrity: sha512-3hxZIm4kQMoSKLOfWHF6B11gGKjSUqAwBOu07klLJOri+4jVDyf4UspO/sAW1/n0v0x+grKrOQrptI81AmyY9w==
   /utif/2.0.1:
     dependencies:
       pako: 1.0.11
@@ -3427,4 +3434,5 @@ specifiers:
   simple-play-store-search: ^1.0.4
   snekfetch: ^4.0.4
   speedtest-net: ^2.1.2
+  user-instagram: ^2.1.8
   yt-search: ^2.7.7

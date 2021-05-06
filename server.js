@@ -328,8 +328,7 @@ function spamla(){
 			message.channel.send("Teknik bir hata oluştu!");
 		}
 		}
-		}
- 	
+		
 
 
 });
