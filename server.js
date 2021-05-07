@@ -373,7 +373,7 @@ const m = await message.channel.send(` ölçüyorum abi bi sn`)
  else if (osType === 'Android') osType = 'Android'
   else osType = os.type();
     var test = speedTest({maxTime: 5000});
-    test.on('data', data => {
+    client.on('data', data => {
               
 const embed = new Discord.RichEmbed()
  .setColor(0x36393F)
@@ -394,7 +394,7 @@ Sağlayıcı Sponsoru: **${data.server.sponsor}**`)
 m.edit(embed)
 });
  
-    test.on('error', err => {
+    client.on('error', err => {
   console.log(err);
 });
 }
