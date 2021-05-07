@@ -20,10 +20,9 @@ const dbb = require('plasma-db');
 const croxydb = require("croxydb");
 var bot = new Aoijs.Bot({
     token:process.env.token,
-    prefix:"$getServerVar[prefix]"
+    prefix:"$ge"
 })
 bot.onMessage()
-bot.loadCommands(`./ekonomi/`)
 var reader = fs.readdirSync("./dbdjskomutlar/").filter(file => file.endsWith(".js"))
 for(const file of reader) {    
     const command = require(`./dbdjskomutlar/${file}`)
