@@ -13,8 +13,6 @@ require('./util/eventLoader.js')(client);
 const path = require('path');
 const snekfetch = require('snekfetch');
 var Aoijs = require("aoi.js")
-const os = require('os');
-const speedtest = require('speedtest-net');
 const queue = new Map();
 const { GiveawaysManager } = require("discord-giveaways");
 const ms = require("parse-ms");
@@ -361,8 +359,10 @@ message.guild.roles.cache.find(s => s.name === rol).setColor("RANDOM");
 client.on("message", async message => {
     if (message.content.startsWith(prefix + 'hıztesti')) {
 const m = await message.channel.send(` ölçüyorum abi bi sn`)
-  
-  var speedTest = require('speedtest-net');
+  const os = require("os");
+  const speedTest = require('speedtest-net');({
+    acceptLicense: true
+    })
 
   var osType = os.type();
 
