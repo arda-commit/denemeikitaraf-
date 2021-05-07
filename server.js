@@ -20,7 +20,7 @@ const dbb = require('plasma-db');
 const croxydb = require("croxydb");
 var bot = new Aoijs.Bot({
     token:process.env.token,
-    prefix:"$ge"
+    prefix:"!!"
 })
 bot.onMessage()
 var reader = fs.readdirSync("./dbdjskomutlar/").filter(file => file.endsWith(".js"))
@@ -359,9 +359,7 @@ client.on("message", async message => {
     if (message.content.startsWith(prefix + 'hıztesti')) {
 const m = await message.channel.send(` ölçüyorum abi bi sn`)
   const os = require("os");
-  const speedTest = require('speedtest-net');({
-    acceptLicense: true
-    })
+  const speedTest = require('speedtest-net');
 
   var osType = os.type();
 
@@ -371,8 +369,8 @@ const m = await message.channel.send(` ölçüyorum abi bi sn`)
   else if (osType === 'Ubuntu') osType = 'Ubuntu'
  else if (osType === 'Android') osType = 'Android'
   else osType = os.type();
-    var test = speedTest({maxTime: 5000});
-    client.on('data', data => {
+    const test = speedTest({maxTime: 5000});
+    speedTest.on('data', data => {
               
 const embed = new Discord.RichEmbed()
  .setColor(0x36393F)
@@ -393,7 +391,7 @@ Sağlayıcı Sponsoru: **${data.server.sponsor}**`)
 m.edit(embed)
 });
  
-    client.on('error', err => {
+    speedTest.on('error', err => {
   console.log(err);
 });
 }

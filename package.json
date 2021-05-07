@@ -26,7 +26,6 @@
     "snekfetch": "^4.0.4",
     "speedtest-net": "^2.1.2",
     "film-apisi": "^1.0.0",
-    "aoi.js": "^1.0.6",
     "discord-tts": "^1.0.3",
     "plasma-db": "^1.0.0",
     "@codare/codare.ai": "^1.0.1",
@@ -36,7 +35,8 @@
     "simple-play-store-search": "^1.0.4",
     "yt-search": "^2.7.7",
     "croxydb": "^0.0.7",
-    "discord-backup": "^2.5.0"
+    "discord-backup": "^2.5.0",
+    "aoi.js":"^1.0.6"
   },
   "engines": {
     "node": "12.x"
